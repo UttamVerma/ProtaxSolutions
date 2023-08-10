@@ -1,0 +1,576 @@
+* {
+    -webkit-tap-highlight-color: green;
+  }
+  
+  .main {
+    width: 100%;
+    background-image: linear-gradient(to right, lightyellow, lightblue);
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    gap: 2.5%;
+    letter-spacing: 1.5px;
+    align-items: center;
+    margin-top: 5vh;
+  }
+  
+  .parentDiv {
+    width: 100%;
+    margin: auto;
+    display: block;
+    height: 40vh;
+  }
+  
+  .image {
+    width: 100%;
+  }
+  
+  .followHeading {
+    font-size: 3vh;
+    font-weight: 500;
+    color: darkcyan;
+    text-decoration: underline;
+    margin-top: -1px;
+  }
+  
+  .followImage {
+    height: 6vh;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .followImagex {
+    height: 7.5vh;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .followDivHeading {
+    font-size: 3vh;
+    font-weight: 500;
+    color: darkcyan;
+    text-decoration: underline;
+  }
+  
+  .imageDiv {
+    display: flex;
+    margin-top: 5vh;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .popularServices:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: lightseagreen;
+  }
+  
+  .popularServices2 {
+    width: 100%;
+  }
+  
+  @media all and (max-width: 1000px) {
+    * {
+      -webkit-tap-highlight-color: green;
+    }
+  
+    .main {
+      width: 100%;
+      background-image: linear-gradient(to right, lightyellow, lightblue);
+      padding-left: 3%;
+      padding-right: 3%;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: repeat(4, 23%);
+      padding-top: 3%;
+      padding-bottom: 3%;
+      letter-spacing: 1.5px;
+      gap: 2.5%;
+      align-items: center;
+      margin-top: 5vh;
+    }
+  
+    .parentDiv {
+      margin: auto;
+      display: block;
+      height: 50vh;
+    }
+  
+    .image {
+      width: 100%;
+    }
+  
+    .followHeading {
+      font-size: 3vh;
+      font-weight: 500;
+      color: darkcyan;
+      text-decoration: underline;
+      margin-top: -1px;
+    }
+  
+    .followImage {
+      height: 6vh;
+      display: block;
+      margin: auto;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+  
+    .followImagex {
+      height: 7.5vh;
+      display: block;
+      margin: auto;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  
+    .followDivHeading {
+      font-size: 3vh;
+      font-weight: 500;
+      color: darkcyan;
+      text-decoration: underline;
+    }
+  
+    .imageDiv {
+      display: flex;
+      margin-top: 5vh;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .popularServices:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      color: lightseagreen;
+    }
+  
+    .popularServices2 {
+      width: 100%;
+      font-size: 15px;
+    }
+  }
+  
+  @media all and (max-width: 850px) {
+    * {
+      -webkit-tap-highlight-color: green;
+    }
+  
+    .main {
+      width: 100%;
+      background-image: linear-gradient(to right, lightyellow, lightblue);
+      padding-left: 3%;
+      padding-right: 3%;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: repeat(4, 23%);
+      padding-top: 3%;
+      padding-bottom: 3%;
+      letter-spacing: 1.5px;
+      gap: 2.5%;
+      align-items: center;
+      margin-top: 5vh;
+    }
+  
+    .parentDiv {
+      margin: auto;
+      display: block;
+      height: 50vh;
+    }
+  
+    .image {
+      width: 100%;
+    }
+  
+    .followHeading {
+      font-size: 3vh;
+      font-weight: 500;
+      color: darkcyan;
+      text-decoration: underline;
+      margin-top: -1px;
+    }
+  
+    .followImage {
+      height: 6vh;
+      display: block;
+      margin: auto;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+  
+    .followImagex {
+      height: 7.5vh;
+      display: block;
+      margin: auto;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  
+    .followDivHeading {
+      font-size: 3vh;
+      font-weight: 500;
+      color: darkcyan;
+      text-decoration: underline;
+    }
+  
+    .imageDiv {
+      display: grid;
+      margin-top: 5vh;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .popularServices:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      color: lightseagreen;
+    }
+  
+    .popularServices2 {
+      width: 100%;
+      font-size: 15px;
+    }
+  }
+  
+  @media all and (max-width: 750px) {
+      * {
+        -webkit-tap-highlight-color: green;
+      }
+    
+      .main {
+        width: 100%;
+        background-image: linear-gradient(to right, lightyellow, lightblue);
+        padding-left: 3%;
+        padding-right: 3%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(4, 23%);
+        padding-top: 3%;
+        padding-bottom: 3%;
+        letter-spacing: 1.5px;
+        gap: 2.5%;
+        align-items: center;
+        margin-top: 5vh;
+      }
+    
+      .parentDiv {
+        margin: auto;
+        display: block;
+        height: 55vh;
+      }
+    
+      .image {
+        width: 100%;
+      }
+    
+      .followHeading {
+        font-size: 3vh;
+        font-weight: 500;
+        color: darkcyan;
+        text-decoration: underline;
+        margin-top: -1px;
+      }
+    
+      .followImage {
+        height: 6vh;
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+    
+      .followImagex {
+        height: 7.5vh;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+    
+      .followDivHeading {
+        font-size: 3vh;
+        font-weight: 500;
+        color: darkcyan;
+        text-decoration: underline;
+      }
+    
+      .imageDiv {
+        display: grid;
+        margin-top: 5vh;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    
+      .popularServices:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: lightseagreen;
+      }
+    
+      .popularServices2 {
+        width: 100%;
+        font-size: 15px;
+      }
+    }
+  
+    @media all and (max-width: 600px) {
+      * {
+        -webkit-tap-highlight-color: green;
+      }
+    
+      .main {
+        width: 100%;
+        background-image: linear-gradient(to right, lightyellow, lightblue);
+        padding-left: 3%;
+        padding-right: 3%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        padding-top: 3%;
+        padding-bottom: 3%;
+        letter-spacing: 1.5px;
+        gap: 2.5%;
+        align-items: center;
+        margin-top: 5vh;
+      }
+    
+      .parentDiv {
+        margin: auto;
+        display: block;
+        height: 45vh;
+      }
+    
+      .image {
+        width: 100%;
+      }
+    
+      .followHeading {
+        font-size: 3vh;
+        font-weight: 500;
+        color: darkcyan;
+        text-decoration: underline;
+        margin-top: -1px;
+      }
+    
+      .followImage {
+        height: 6vh;
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+    
+      .followImagex {
+        height: 7.5vh;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+    
+      .followDivHeading {
+        font-size: 3vh;
+        font-weight: 500;
+        color: darkcyan;
+        text-decoration: underline;
+      }
+    
+      .imageDiv {
+        display: grid;
+        margin-top: 5vh;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    
+      .popularServices:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: lightseagreen;
+      }
+    
+      .popularServices2 {
+        width: 100%;
+        font-size: 15px;
+      }
+    }
+  
+    @media all and (max-width: 460px) {
+      * {
+        -webkit-tap-highlight-color: green;
+      }
+    
+      .main {
+        width: 100%;
+        background-image: linear-gradient(to right, lightyellow, lightblue);
+        padding-left: 3%;
+        padding-right: 3%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        padding-top: 3%;
+        padding-bottom: 15%;
+        letter-spacing: 1.5px;
+        align-items: center;
+        margin-top: 5vh;
+      }
+    
+      .parentDiv {
+        margin: auto;
+        display: block;
+        height: 40vh;
+      }
+    
+      .image {
+        width: 100%;
+      }
+    
+      .followHeading {
+        font-size: 3vh;
+        font-weight: 500;
+        color: darkcyan;
+        text-decoration: underline;
+        margin-top: -1px;
+      }
+    
+      .followImage {
+        height: 6vh;
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+    
+      .followImagex {
+        height: 7.5vh;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+    
+      .followDivHeading {
+        font-size: 3vh;
+        font-weight: 500;
+        color: darkcyan;
+        text-decoration: underline;
+      }
+    
+      .imageDiv {
+        display: grid;
+        margin-top: 5vh;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    
+      .popularServices:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: lightseagreen;
+      }
+    
+      .popularServices2 {
+        width: 100%;
+        font-size: 15px;
+      }
+    }
+  
+    @media all and (max-width: 300px) {
+      * {
+        -webkit-tap-highlight-color: green;
+      }
+    
+      .main {
+        width: 100%;
+        background-image: linear-gradient(to right, lightyellow, lightblue);
+        padding-left: 3%;
+        padding-right: 3%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        padding-top: 3%;
+        padding-bottom: 55%;
+        letter-spacing: 1.5px;
+        align-items: center;
+        margin-top: 5vh;
+      }
+    
+      .parentDiv {
+        margin: auto;
+        display: block;
+        height: 40vh;
+      }
+    
+      .image {
+        width: 100%;
+      }
+    
+      .followHeading {
+        font-size: 3vh;
+        font-weight: 500;
+        color: darkcyan;
+        text-decoration: underline;
+        margin-top: -1px;
+      }
+    
+      .followImage {
+        height: 6vh;
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+    
+      .followImagex {
+        height: 7.5vh;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+    
+      .followDivHeading {
+        font-size: 3vh;
+        font-weight: 500;
+        color: darkcyan;
+        text-decoration: underline;
+      }
+    
+      .imageDiv {
+        display: grid;
+        margin-top: 5vh;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    
+      .popularServices:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: lightseagreen;
+      }
+    
+      .popularServices2 {
+        width: 100%;
+        font-size: 15px;
+      }
+    }
