@@ -32,7 +32,7 @@ let Footer = () => {
           <p className={styles.popularServices}>Financial Consulting</p>
         </div>
         <div className={styles.parentDiv}>
-          <p className={styles.followDivHeading}>Know More</p>
+          <p className={styles.followDivHeading}>Discover More</p>
           <p className={styles.popularServices}>Home</p>
           <p className={styles.popularServices}>About Us</p>
           <p className={styles.popularServices}>Contact</p>

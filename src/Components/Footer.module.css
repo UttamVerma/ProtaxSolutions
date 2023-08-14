@@ -22,7 +22,7 @@
     width: 100%;
     margin: auto;
     display: block;
-    height: 40vh;
+    height: 270px;
   }
   
   .image {
@@ -30,7 +30,7 @@
   }
   
   .followHeading {
-    font-size: 3vh;
+    font-size: 20px;
     font-weight: 500;
     color: darkcyan;
     text-decoration: underline;
@@ -38,7 +38,7 @@
   }
   
   .followImage {
-    height: 6vh;
+    height: 45px;
     display: block;
     margin: auto;
     margin-bottom: 15px;
@@ -54,7 +54,7 @@
   }
   
   .followDivHeading {
-    font-size: 3vh;
+    font-size: 20px;
     font-weight: 500;
     color: darkcyan;
     text-decoration: underline;
@@ -103,7 +103,7 @@
     .parentDiv {
       margin: auto;
       display: block;
-      height: 50vh;
+      height: 270px;
     }
   
     .image {
@@ -111,7 +111,7 @@
     }
   
     .followHeading {
-      font-size: 3vh;
+      font-size: 20px;
       font-weight: 500;
       color: darkcyan;
       text-decoration: underline;
@@ -119,7 +119,7 @@
     }
   
     .followImage {
-      height: 6vh;
+      height: 45px;
       display: block;
       margin: auto;
       margin-bottom: 15px;
@@ -135,7 +135,90 @@
     }
   
     .followDivHeading {
-      font-size: 3vh;
+      font-size: 20px;
+      font-weight: 500;
+      color: darkcyan;
+      text-decoration: underline;
+    }
+  
+    .imageDiv {
+      display: flex;
+      margin-top: 5vh;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .popularServices:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      color: lightseagreen;
+    }
+  
+    .popularServices2 {
+      width: 100%;
+      font-size: 15px;
+    }
+  }
+
+  @media all and (max-width: 900px) {
+    * {
+      -webkit-tap-highlight-color: green;
+    }
+  
+    .main {
+      width: 100%;
+      background-image: linear-gradient(to right, lightyellow, lightblue);
+      padding-left: 3%;
+      padding-right: 3%;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: repeat(4, 23%);
+      padding-top: 3%;
+      padding-bottom: 13%;
+      letter-spacing: 1.5px;
+      gap: 2.5%;
+      align-items: center;
+      margin-top: 5vh;
+    }
+  
+    .parentDiv {
+      margin: auto;
+      display: block;
+      height: 270px;
+    }
+  
+    .image {
+      width: 100%;
+    }
+  
+    .followHeading {
+      font-size: 20px;
+      font-weight: 500;
+      color: darkcyan;
+      text-decoration: underline;
+      margin-top: -1px;
+    }
+  
+    .followImage {
+      height: 45px;
+      display: block;
+      margin: auto;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+  
+    .followImagex {
+      height: 7.5vh;
+      display: block;
+      margin: auto;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  
+    .followDivHeading {
+      font-size: 20px;
       font-weight: 500;
       color: darkcyan;
       text-decoration: underline;
@@ -176,7 +259,7 @@
       display: grid;
       grid-template-columns: repeat(4, 23%);
       padding-top: 3%;
-      padding-bottom: 3%;
+      padding-bottom: 13%;
       letter-spacing: 1.5px;
       gap: 2.5%;
       align-items: center;
@@ -186,7 +269,7 @@
     .parentDiv {
       margin: auto;
       display: block;
-      height: 50vh;
+      height: 270px;
     }
   
     .image {
@@ -194,7 +277,7 @@
     }
   
     .followHeading {
-      font-size: 3vh;
+      font-size: 20px;
       font-weight: 500;
       color: darkcyan;
       text-decoration: underline;
@@ -202,7 +285,7 @@
     }
   
     .followImage {
-      height: 6vh;
+      height: 45px;
       display: block;
       margin: auto;
       margin-bottom: 15px;
@@ -218,7 +301,7 @@
     }
   
     .followDivHeading {
-      font-size: 3vh;
+      font-size: 20px;
       font-weight: 500;
       color: darkcyan;
       text-decoration: underline;
@@ -259,7 +342,7 @@
         display: grid;
         grid-template-columns: repeat(4, 23%);
         padding-top: 3%;
-        padding-bottom: 3%;
+        padding-bottom: 15%;
         letter-spacing: 1.5px;
         gap: 2.5%;
         align-items: center;
@@ -269,7 +352,7 @@
       .parentDiv {
         margin: auto;
         display: block;
-        height: 55vh;
+        height: 290px;
       }
     
       .image {
@@ -277,7 +360,7 @@
       }
     
       .followHeading {
-        font-size: 3vh;
+        font-size: 20px;
         font-weight: 500;
         color: darkcyan;
         text-decoration: underline;
@@ -285,7 +368,7 @@
       }
     
       .followImage {
-        height: 6vh;
+        height: 45px;
         display: block;
         margin: auto;
         margin-bottom: 15px;
@@ -301,7 +384,7 @@
       }
     
       .followDivHeading {
-        font-size: 3vh;
+        font-size: 20px;
         font-weight: 500;
         color: darkcyan;
         text-decoration: underline;
@@ -352,7 +435,7 @@
       .parentDiv {
         margin: auto;
         display: block;
-        height: 45vh;
+        height: 280px;
       }
     
       .image {
@@ -360,7 +443,7 @@
       }
     
       .followHeading {
-        font-size: 3vh;
+        font-size: 20px;
         font-weight: 500;
         color: darkcyan;
         text-decoration: underline;
@@ -368,7 +451,7 @@
       }
     
       .followImage {
-        height: 6vh;
+        height: 45px;
         display: block;
         margin: auto;
         margin-bottom: 15px;
@@ -384,7 +467,7 @@
       }
     
       .followDivHeading {
-        font-size: 3vh;
+        font-size: 20px;
         font-weight: 500;
         color: darkcyan;
         text-decoration: underline;
@@ -434,15 +517,15 @@
       .parentDiv {
         margin: auto;
         display: block;
-        height: 40vh;
+        height: 200px;
       }
     
       .image {
-        width: 100%;
+        width: 70%;
       }
     
       .followHeading {
-        font-size: 3vh;
+        font-size: 20px;
         font-weight: 500;
         color: darkcyan;
         text-decoration: underline;
@@ -450,7 +533,7 @@
       }
     
       .followImage {
-        height: 6vh;
+        height: 30px;
         display: block;
         margin: auto;
         margin-bottom: 15px;
@@ -466,7 +549,7 @@
       }
     
       .followDivHeading {
-        font-size: 3vh;
+        font-size: 17px;
         font-weight: 500;
         color: darkcyan;
         text-decoration: underline;
@@ -475,10 +558,14 @@
       .imageDiv {
         display: grid;
         margin-top: 5vh;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         align-items: center;
         justify-content: space-between;
         width: 100%;
+      }
+
+      .popularServices{
+        font-size: 12px;
       }
     
       .popularServices:hover {
@@ -489,7 +576,7 @@
     
       .popularServices2 {
         width: 100%;
-        font-size: 15px;
+        font-size: 12px;
       }
     }
   
@@ -507,7 +594,7 @@
         display: grid;
         grid-template-columns: repeat(1, 100%);
         padding-top: 3%;
-        padding-bottom: 55%;
+        padding-bottom: 25%;
         letter-spacing: 1.5px;
         align-items: center;
         margin-top: 5vh;
@@ -516,15 +603,15 @@
       .parentDiv {
         margin: auto;
         display: block;
-        height: 40vh;
+        height: 200px;
       }
     
       .image {
-        width: 100%;
+        width: 70%;
       }
     
       .followHeading {
-        font-size: 3vh;
+        font-size: 17px;
         font-weight: 500;
         color: darkcyan;
         text-decoration: underline;
@@ -532,7 +619,7 @@
       }
     
       .followImage {
-        height: 6vh;
+        height: 35px;
         display: block;
         margin: auto;
         margin-bottom: 15px;
@@ -548,7 +635,7 @@
       }
     
       .followDivHeading {
-        font-size: 3vh;
+        font-size: 17px;
         font-weight: 500;
         color: darkcyan;
         text-decoration: underline;
@@ -571,6 +658,6 @@
     
       .popularServices2 {
         width: 100%;
-        font-size: 15px;
+        font-size: 12px;
       }
     }

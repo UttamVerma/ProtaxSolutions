@@ -1,0 +1,1033 @@
+.main{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.exploreHeading{
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: dodgerblue;
+}
+
+.exploreDescription{
+    letter-spacing: 1px;
+    color: #004080;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.servicesCardParentDiv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,49%);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serviceCard{
+    height: 560px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: left;
+}
+
+.serviceImage{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.serviceCard:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .serviceImage{
+        width: 100%;
+        height: 70%;
+        transform: scale(1.02);
+    }
+}
+
+.serviceName{
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 25px;
+    color: #DC143C;
+}
+
+.serviceDesc{
+    letter-spacing: 1px;
+    font-size: 17px;
+    margin-top: -10px;
+    color: rgb(67, 19, 19);
+}
+
+.viewMore{
+    font-weight: 200;
+    color: rgb(112, 33, 33);
+}
+
+.viewMore:hover{
+    text-decoration: underline;
+}
+
+@media all and (max-width:1200px){
+    .main{
+        width: 80%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .exploreHeading{
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: dodgerblue;
+    }
+    
+    .exploreDescription{
+        letter-spacing: 1px;
+        color: #004080;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .servicesCardParentDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .serviceCard{
+        height: 560px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+        padding-bottom: 30px;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        height: 67%;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .serviceCard:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .serviceImage{
+            width: 100%;
+            height: 67%;
+            transform: scale(1.02);
+        }
+    }
+    
+    .serviceName{
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 25px;
+        color: #DC143C;
+    }
+    
+    .serviceDesc{
+        letter-spacing: 1px;
+        font-size: 17px;
+        margin-top: -10px;
+        color: rgb(67, 19, 19);
+    }
+    
+    .viewMore{
+        font-weight: 200;
+        color: rgb(112, 33, 33);
+    }
+    
+    .viewMore:hover{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width:1165px){
+    .main{
+        width: 95%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .exploreHeading{
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: dodgerblue;
+    }
+    
+    .exploreDescription{
+        letter-spacing: 1px;
+        color: #004080;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .servicesCardParentDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .serviceCard{
+        height: 560px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        height: 67%;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .serviceCard:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .serviceImage{
+            width: 100%;
+            height: 67%;
+            transform: scale(1.02);
+        }
+    }
+    
+    .serviceName{
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 25px;
+        color: #DC143C;
+    }
+    
+    .serviceDesc{
+        letter-spacing: 1px;
+        font-size: 17px;
+        margin-top: -10px;
+        color: rgb(67, 19, 19);
+    }
+    
+    .viewMore{
+        font-weight: 200;
+        color: rgb(112, 33, 33);
+    }
+    
+    .viewMore:hover{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width:1000px){
+    .main{
+        width: 95%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .exploreHeading{
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: dodgerblue;
+    }
+    
+    .exploreDescription{
+        letter-spacing: 1px;
+        color: #004080;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .servicesCardParentDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .serviceCard{
+        height: 560px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        height: 67%;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .serviceCard:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .serviceImage{
+            width: 100%;
+            height: 67%;
+            transform: scale(1.02);
+        }
+    }
+    
+    .serviceName{
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 22px;
+        color: #DC143C;
+    }
+    
+    .serviceDesc{
+        letter-spacing: 1px;
+        font-size: 16px;
+        margin-top: -10px;
+        color: rgb(67, 19, 19);
+    }
+    
+    .viewMore{
+        font-weight: 200;
+        color: rgb(112, 33, 33);
+    }
+    
+    .viewMore:hover{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width:900px){
+    .main{
+        width: 95%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .exploreHeading{
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: dodgerblue;
+    }
+    
+    .exploreDescription{
+        letter-spacing: 1px;
+        color: #004080;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .servicesCardParentDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .serviceCard{
+        height: 560px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        height: 65%;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .serviceCard:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .serviceImage{
+            width: 100%;
+            height: 67%;
+            transform: scale(1.02);
+        }
+    }
+    
+    .serviceName{
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #DC143C;
+    }
+    
+    .serviceDesc{
+        letter-spacing: 1px;
+        font-size: 16px;
+        margin-top: -10px;
+        color: rgb(67, 19, 19);
+    }
+    
+    .viewMore{
+        font-weight: 200;
+        color: rgb(112, 33, 33);
+    }
+    
+    .viewMore:hover{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width:815px){
+    .main{
+        width: 95%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .exploreHeading{
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: dodgerblue;
+    }
+    
+    .exploreDescription{
+        letter-spacing: 1px;
+        color: #004080;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .servicesCardParentDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .serviceCard{
+        height: 560px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        height: 61%;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .serviceCard:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .serviceImage{
+            width: 100%;
+            height: 67%;
+            transform: scale(1.02);
+        }
+    }
+    
+    .serviceName{
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #DC143C;
+    }
+    
+    .serviceDesc{
+        letter-spacing: 1px;
+        font-size: 16px;
+        margin-top: -10px;
+        color: rgb(67, 19, 19);
+    }
+    
+    .viewMore{
+        font-weight: 200;
+        color: rgb(112, 33, 33);
+    }
+    
+    .viewMore:hover{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width:780px){
+    .main{
+        width: 95%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .exploreHeading{
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: dodgerblue;
+    }
+    
+    .exploreDescription{
+        letter-spacing: 1px;
+        color: #004080;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .servicesCardParentDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .serviceCard{
+        height: 560px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        height: 57%;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .serviceCard:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .serviceImage{
+            width: 100%;
+            height: 67%;
+            transform: scale(1.02);
+        }
+    }
+    
+    .serviceName{
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #DC143C;
+    }
+    
+    .serviceDesc{
+        letter-spacing: 1px;
+        font-size: 16px;
+        margin-top: -10px;
+        color: rgb(67, 19, 19);
+    }
+    
+    .viewMore{
+        font-weight: 200;
+        color: rgb(112, 33, 33);
+    }
+    
+    .viewMore:hover{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width:670px){
+    .main{
+        width: 95%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .exploreHeading{
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: dodgerblue;
+    }
+    
+    .exploreDescription{
+        letter-spacing: 1px;
+        color: #004080;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .servicesCardParentDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .serviceCard{
+        height: 560px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        height: 57%;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .serviceCard:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .serviceImage{
+            width: 100%;
+            height: 67%;
+            transform: scale(1.02);
+        }
+    }
+    
+    .serviceName{
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 19px;
+        color: #DC143C;
+    }
+    
+    .serviceDesc{
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-top: -10px;
+        color: rgb(67, 19, 19);
+    }
+    
+    .viewMore{
+        font-weight: 200;
+        color: rgb(112, 33, 33);
+    }
+    
+    .viewMore:hover{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width:600px){
+    .main{
+        width: 80%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .exploreHeading{
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: dodgerblue;
+    }
+    
+    .exploreDescription{
+        letter-spacing: 1px;
+        color: #004080;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    
+    .servicesCardParentDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .serviceCard{
+        height: 450px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        height: 65%;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .serviceCard:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .serviceImage{
+            width: 100%;
+            height: 67%;
+            transform: scale(1.02);
+        }
+    }
+    
+    .serviceName{
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 19px;
+        color: #DC143C;
+    }
+    
+    .serviceDesc{
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-top: -10px;
+        color: rgb(67, 19, 19);
+    }
+    
+    .viewMore{
+        font-weight: 200;
+        color: rgb(112, 33, 33);
+    }
+    
+    .viewMore:hover{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width:480px){
+    .main{
+        width: 90%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .exploreHeading{
+        font-weight: 500;
+        font-size: 25px;
+        letter-spacing: 1px;
+        color: dodgerblue;
+    }
+    
+    .exploreDescription{
+        letter-spacing: 1px;
+        color: #004080;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .servicesCardParentDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .serviceCard{
+        height: 450px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        height: 62%;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .serviceCard:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .serviceImage{
+            width: 100%;
+            height: 67%;
+            transform: scale(1.02);
+        }
+    }
+    
+    .serviceName{
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #DC143C;
+    }
+    
+    .serviceDesc{
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-top: -10px;
+        text-align: justify;
+        color: rgb(67, 19, 19);
+    }
+    
+    .viewMore{
+        font-weight: 200;
+        font-size: 14px;
+        color: rgb(112, 33, 33);
+    }
+    
+    .viewMore:hover{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width:430px){
+    .main{
+        width: 90%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .exploreHeading{
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: dodgerblue;
+    }
+    
+    .exploreDescription{
+        text-align: center;
+        letter-spacing: 1px;
+        color: #004080;
+        font-size: 15px;
+    }
+    
+    .servicesCardParentDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .serviceCard{
+        height: 450px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        height: 60%;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .serviceCard:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .serviceImage{
+            width: 100%;
+            height: 67%;
+            transform: scale(1.02);
+        }
+    }
+    
+    .serviceName{
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #DC143C;
+    }
+    
+    .serviceDesc{
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-top: -10px;
+        text-align: justify;
+        color: rgb(67, 19, 19);
+    }
+    
+    .viewMore{
+        font-weight: 200;
+        font-size: 14px;
+        color: rgb(112, 33, 33);
+    }
+    
+    .viewMore:hover{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width:350px){
+    .main{
+        width: 90%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .exploreHeading{
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: dodgerblue;
+    }
+    
+    .exploreDescription{
+        text-align: center;
+        letter-spacing: 1px;
+        color: #004080;
+        font-size: 15px;
+    }
+    
+    .servicesCardParentDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .serviceCard{
+        height: 400px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .serviceCard:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .serviceImage{
+            width: 100%;
+            height: 67%;
+            transform: scale(1.02);
+        }
+    }
+    
+    .serviceName{
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 13px;
+        color: #DC143C;
+    }
+    
+    .serviceDesc{
+        letter-spacing: 1px;
+        font-size: 13px;
+        margin-top: -10px;
+        text-align: left;
+        color: rgb(67, 19, 19);
+    }
+    
+    .viewMore{
+        font-weight: 200;
+        font-size: 13px;
+        color: rgb(112, 33, 33);
+    }
+    
+    .viewMore:hover{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width:255px){
+    .main{
+        width: 90%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .exploreHeading{
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: dodgerblue;
+    }
+    
+    .exploreDescription{
+        text-align: center;
+        letter-spacing: 1px;
+        color: #004080;
+        font-size: 15px;
+    }
+    
+    .servicesCardParentDiv{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .serviceCard{
+        height: 400px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .serviceCard:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .serviceImage{
+            width: 100%;
+            height: 67%;
+            transform: scale(1.02);
+        }
+    }
+    
+    .serviceName{
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 13px;
+        color: #DC143C;
+    }
+    
+    .serviceDesc{
+        letter-spacing: 1px;
+        font-size: 11px;
+        margin-top: -10px;
+        text-align: left;
+        color: rgb(67, 19, 19);
+    }
+    
+    .viewMore{
+        font-weight: 200;
+        font-size: 11px;
+        color: rgb(112, 33, 33);
+    }
+    
+    .viewMore:hover{
+        text-decoration: underline;
+    }
+}
