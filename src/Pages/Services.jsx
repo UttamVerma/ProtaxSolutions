@@ -4,6 +4,7 @@ import { AuthContext } from "../Context/AuthContextProvider";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
+import loadingImg from "../Components/Assets/loadingGif.gif";
 
 let truncateWords = (text, maxWords) => {
   let words = text.split(" ");
@@ -20,9 +21,33 @@ let Services = () => {
   useEffect(() => {
     if (servicesData.length > 0) {
       setLoading(true);
-      console.log(servicesData);
     }
   }, [servicesData]);
+
+  useEffect(() => {
+    let preloadImages = async () => {
+      let imagePromises = servicesData.map((item) => {
+        return new Promise((resolve, reject) => {
+          let img = new Image();
+          img.src = item.img1;
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+      });
+
+      try {
+        await Promise.all(imagePromises);
+        setLoading(true);
+      } catch (error) {
+        console.error("Image preloading error:", error);
+      }
+    };
+
+    if (servicesData.length > 0) {
+      preloadImages();
+    }
+  }, [servicesData]);
+
   return (
     <>
       <Navbar />
@@ -62,8 +87,40 @@ let Services = () => {
               );
             })
           ) : (
-            <p>Loading</p>
+            <img
+              src={loadingImg}
+              alt="Loading..."
+              className={styles.loadingGif}
+            />
           )}
+          {loading ? (
+            <div className={styles.notSureDiv}>
+              <p className={styles.notSureHeading}>
+                Not sure what you are looking for?
+              </p>
+              <p className={styles.notSurePhoneText}>
+                Call us at{" "}
+                <span className={styles.seperateColorText}>+91-9878856649</span>{" "}
+                and we will help you figure out your accounting and taxation
+                requirement!
+              </p>
+              <p className={styles.notSurePhoneText}>
+                You can also send us a mail at{" "}
+                <span className={styles.seperateColorText}>
+                  pprotaxsolutions@gmail.com
+                </span>{" "}
+                for any financial requirement.
+              </p>
+              <p className={styles.notSurePhoneText}>
+                You can also visit our office at{" "}
+                <span className={styles.seperateColorText}>
+                  Plot No 437, 2nd Floor, Industrial Area Phase 2, Chandigarh,
+                  160002
+                </span>{" "}
+                for more information.
+              </p>
+            </div>
+          ) : null}
         </div>
       </div>
       <Footer />

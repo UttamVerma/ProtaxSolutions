@@ -4,15 +4,23 @@ import Footer from "../Components/Footer";
 import call from "../Components/Assets/call.png";
 import email from "../Components/Assets/email.png";
 import map from "../Components/Assets/map.png";
+import { useState } from "react";
+import loadingImg from "../Components/Assets/loadingGif.gif";
 
 let Contact = () => {
+  let [mapLoaded, setMapLoaded] = useState(false);
+  let handleMapLoad = () => {
+    setMapLoaded(true);
+  };
   return (
     <>
       <Navbar />
+      {mapLoaded ? null : <img src={loadingImg} className={styles.loadingImg}/>}
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.354056119093!2d76.80097187569966!3d30.708445474596015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f95a4f1f17225%3A0xd4d5d7d5054ab347!2sProtax%20Solutions!5e0!3m2!1sen!2sin!4v1691652690053!5m2!1sen!2sin"
         className={styles.map}
         loading="lazy"
+        onLoad={handleMapLoad}
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
       <div className={styles.infoDiv}>
@@ -33,4 +41,5 @@ let Contact = () => {
     </>
   );
 };
+
 export default Contact;
