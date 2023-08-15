@@ -41,9 +41,8 @@
 
 .options {
     font-size: 17px;
-    font-weight: 500;
     letter-spacing: 1px;
-    color: rgb(101, 100, 100);
+    color: black;
     transition: color 1s ease, text-decoration 3s ease; 
     text-decoration: none;
     position: relative;
@@ -56,12 +55,12 @@
     bottom: -2px; 
     width: 0;
     height: 2px;
-    background-color: black;
+    background-color: rgb(176, 196, 222);
     transition: width 1s ease; 
 }
 
 .options:hover {
-    color: black;
+    color: rgb(0, 206, 209);
     cursor: pointer;
 }
 
@@ -107,9 +106,8 @@
     
     .options {
         font-size: 17px;
-        font-weight: 500;
         letter-spacing: 1px;
-        color: rgb(101, 100, 100);
+        color: black;
         transition: color 1s ease, text-decoration 3s ease; 
         text-decoration: none;
         position: relative;
@@ -122,12 +120,12 @@
         bottom: -2px; 
         width: 0;
         height: 2px;
-        background-color: black;
+        background-color: rgb(176, 196, 222);
         transition: width 1s ease; 
     }
     
     .options:hover {
-        color: black;
+        color: rgb(0, 206, 209);
         cursor: pointer;
     }
 
@@ -177,9 +175,8 @@
     
     .options {
         font-size: 17px;
-        font-weight: 500;
         letter-spacing: 1px;
-        color: rgb(101, 100, 100);
+        color: black;
         transition: color 1s ease, text-decoration 3s ease; 
         text-decoration: none;
         position: relative;
@@ -192,12 +189,12 @@
         bottom: -2px; 
         width: 0;
         height: 2px;
-        background-color: black;
+        background-color: rgb(176, 196, 222);
         transition: width 1s ease; 
     }
     
     .options:hover {
-        color: black;
+        color: rgb(0, 206, 209);
         cursor: pointer;
     }
 
@@ -251,9 +248,8 @@
     .options{
         display: none;
         font-size: 17px;
-        font-weight: 500;
         letter-spacing: 1px;
-        color: rgb(101, 100, 100);
+        color: black;
         transition: color 1s ease, text-decoration 3s ease; 
         text-decoration: none;
     }
@@ -265,13 +261,13 @@
         bottom: -2px; 
         width: 0;
         height: 2px;
-        background-color: black;
+        background-color: rgb(176, 196, 222);
         transition: width 1s ease; 
     }
     
     .options:hover{
         cursor: pointer;
-        color:  black;
+        color: rgb(0, 206, 209);
     }
 
     .hambergerMenu{
@@ -328,9 +324,8 @@
     .options{
         display: none;
         font-size: 17px;
-        font-weight: 500;
         letter-spacing: 1px;
-        color: rgb(101, 100, 100);
+        color: black;
         transition: color 1s ease, text-decoration 3s ease; 
         text-decoration: none;
     }
@@ -342,13 +337,13 @@
         bottom: -2px; 
         width: 0;
         height: 2px;
-        background-color: black;
+        background-color: rgb(176, 196, 222);
         transition: width 1s ease; 
     }
     
     .options:hover{
         cursor: pointer;
-        color: black;
+        color: rgb(0, 206, 209);
     }
 
     .hambergerMenu{
@@ -407,7 +402,6 @@
     
     .options:hover{
         cursor: pointer;
-        text-decoration: underline;
     }
 
     .hambergerMenu{

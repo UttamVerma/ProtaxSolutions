@@ -5,6 +5,7 @@ import Contact from "../Pages/Contact";
 import Services from "../Pages/Services";
 import IndivisualServices from "../Pages/IndivisualService";
 import RelatedService from "../Pages/RelatedService";
+import NotFound from "../Pages/NotFound";
 let AllRoutes=()=>{
     return (
         <Routes>
@@ -14,6 +15,7 @@ let AllRoutes=()=>{
             <Route path="/services" element={<Services/>}/>
             <Route path="/service/:name" element={<IndivisualServices/>}/>
             <Route path="service/related/:name" element={<RelatedService/>}/>
+            <Route path="*" element={<NotFound/>}/>
         </Routes>
     )
 }

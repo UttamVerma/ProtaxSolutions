@@ -5,7 +5,6 @@ import { getAnalytics } from "firebase/analytics";
 import { getDatabase, ref, onValue,off } from "firebase/database";
 import AllRoutes from './Routes/AllRoutes';
 import { AuthContext } from './Context/AuthContextProvider';
-import Services from './Pages/Services';
 
 function App() {
   let {setServicesData}=useContext(AuthContext);
