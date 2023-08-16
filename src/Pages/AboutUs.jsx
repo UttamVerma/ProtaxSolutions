@@ -1,8 +1,12 @@
 import styles from "./AboutUs.module.css";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { useEffect } from "react";
 
 let AboutUs = () => {
+  useEffect(()=>{
+    window.scroll({ top: 0, behavior: "smooth" });
+  },[]);
   return (
     <>
       <Navbar />

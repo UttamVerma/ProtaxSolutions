@@ -19,6 +19,9 @@ let Services = () => {
   let navigate = useNavigate();
   let { servicesData } = useContext(AuthContext);
   useEffect(() => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  }, []);
+  useEffect(() => {
     if (servicesData.length > 0) {
       setLoading(true);
     }

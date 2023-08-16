@@ -4,10 +4,13 @@ import Footer from "../Components/Footer";
 import call from "../Components/Assets/call.png";
 import email from "../Components/Assets/email.png";
 import map from "../Components/Assets/map.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import loadingImg from "../Components/Assets/loadingGif.gif";
 
 let Contact = () => {
+  useEffect(()=>{
+    window.scroll({ top: 0, behavior: "smooth" });
+  },[]);
   let [mapLoaded, setMapLoaded] = useState(false);
   let handleMapLoad = () => {
     setMapLoaded(true);

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import styles from "./IndivisualService.module.css";
 import { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
@@ -9,6 +9,10 @@ import loadingImg from "../Components/Assets/loadingGif.gif";
 import Footer from "../Components/Footer";
 
 let IndivisualServices = () => {
+  useEffect(() => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  }, []);
+  let navigate = useNavigate();
   let [relatedServices, setRelatedServices] = useState([]);
   let [service, setService] = useState([]);
   let [loading, setLoading] = useState(true);
@@ -46,9 +50,17 @@ let IndivisualServices = () => {
     let onDataChange = (snapshot) => {
       let data = snapshot.val();
       if (data) {
+        let servicesArray = data.filter((item) => {
+          return item.name !== name;
+        });
         let relatedServicesData = [];
-        for (let i = 0; i < data.length; i = i + 4) {
-          relatedServicesData.push(data[i]);
+        for (let i = 1; i < servicesArray.length; i = i + 2) {
+          if (data[i].name !== name) {
+            relatedServicesData.push(data[i]);
+          }
+          if(relatedServicesData.length===2){
+            break;
+          }
         }
         setRelatedServices(relatedServicesData);
       }
@@ -84,7 +96,11 @@ let IndivisualServices = () => {
           <div className={styles.relatedServicesDiv}>
             {relatedServices.map((item) => {
               return (
-                <div className={styles.relatedServiceCard} key={item.id}>
+                <div
+                  className={styles.relatedServiceCard}
+                  key={item.id}
+                  onClick={() => navigate(`/service/related/${item.name}`)}
+                >
                   <img className={styles.relatedServiceImage} src={item.img1} />
                   <p className={styles.relatedServiceCardHeading}>
                     {item.name} {"->"}
@@ -97,7 +113,8 @@ let IndivisualServices = () => {
             <p className={styles.acceptanceText}>
               If you’re ready to move forward with Protax Solutions as your
               accounting services provider, we will then reach out to discuss
-              your immediate and ongoing accounting needs. Just give us a call or mail us regarding your decision.
+              your immediate and ongoing accounting needs. Just give us a call
+              or mail us regarding your decision.
             </p>
           </div>
           <Footer />
