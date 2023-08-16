@@ -510,7 +510,7 @@
         margin-top: 50px;
         box-sizing: border-box;
         padding: 5px;
-        border: 1px solid coral;
+        border: 1px solid yellowgreen;
         border-radius: 10px;
     }
     
@@ -527,7 +527,7 @@
     }
     
     .imageDiv {
-      height: 500px;
+      height: 580px;
       width: 70%;
       margin: auto;
       display: grid;
@@ -609,12 +609,12 @@
     }
     
     .acceptanceDiv{
-        width: 70%;
+        width: 90%;
         margin: auto;
         margin-top: 50px;
         box-sizing: border-box;
         padding: 10px;
-        border: 1px solid coral;
+        border: 1px solid yellowgreen;
         border-radius: 10px;
     }
     
