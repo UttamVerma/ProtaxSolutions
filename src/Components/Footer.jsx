@@ -12,6 +12,26 @@ let Footer = () => {
     navigate("/");
     window.scroll({ top: 0, behavior: "smooth" });
   };
+  let msmeHandler=()=>{
+    navigate("/service/MSME Registration")
+    window.scroll({ top: 0, behavior: "smooth" });
+  }
+  let businessHandler=()=>{
+    navigate("/service/Business Registration")
+    window.scroll({ top: 0, behavior: "smooth" });
+  }
+  let auditHandler=()=>{
+    navigate("/service/Audit")
+    window.scroll({ top: 0, behavior: "smooth" });
+  }
+  let financialHandler=()=>{
+    navigate("/service/Financial Consulting")
+    window.scroll({ top: 0, behavior: "smooth" });
+  }
+  let gstHandler=()=>{
+    navigate("/service/GST Compliances")
+    window.scroll({ top: 0, behavior: "smooth" });
+  }
   return (
     <>
       <div className={styles.main}>
@@ -71,31 +91,31 @@ let Footer = () => {
           <p className={styles.followDivHeading}>Popular Services</p>
           <p
             className={styles.popularServices}
-            onClick={() => navigate("/service/MSME Registration")}
+            onClick={() => msmeHandler()}
           >
             MSME Registration
           </p>
           <p
             className={styles.popularServices}
-            onClick={() => navigate("/service/Audit")}
+            onClick={() => auditHandler()}
           >
             Audit
           </p>
           <p
             className={styles.popularServices}
-            onClick={() => navigate("/service/Business Registration")}
+            onClick={() => businessHandler()}
           >
             Business Registration
           </p>
           <p
             className={styles.popularServices}
-            onClick={() => navigate("/service/GST Compliances")}
+            onClick={() => gstHandler()}
           >
             GST Compliances
           </p>
           <p
             className={styles.popularServices}
-            onClick={() => navigate("/service/Financial Consulting")}
+            onClick={() => financialHandler()}
           >
             Financial Consulting
           </p>
@@ -138,6 +158,9 @@ let Footer = () => {
             Plot No 437, 2nd Floor, Industrial Area Phase 2, Chandigarh, 160002
           </p>
         </div>
+      </div>
+      <div className={styles.developerInfoDiv}>
+        <p className={styles.developerInfoText}>Crafted with care by <span className={styles.nameText}>Uttam Verma & Saksham Verma</span></p>
       </div>
     </>
   );

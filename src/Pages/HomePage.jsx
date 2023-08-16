@@ -143,26 +143,26 @@ let HomePage = () => {
       </p>
       <p className={styles.introDescription}>
         Whether your business is new or old, it needs efficient accounting
-        servicess for growth and sustainability. Having your books in top shape
+        services for growth and sustainability. Having your books in top shape
         all year round is an achievement that can help your business function
         smoothly and provide grounds for sound and promising business decisions.
       </p>
       <p className={styles.introDescription}>
         Protax Solutions to take care of all you’re accounting needs, you will
         be ensuring yourself a step in the right direction. By letting us be
-        your professional accountants you will:
+        your professional accountant you will:
       </p>
       <ul className={styles.listParentForIntroduction}>
         <li className={styles.listIntro}>
-          Have availed the services of highly qualified, experienced accounting
-          professionals;
+          avail the services of highly qualified, experienced accounting
+          professionals.
         </li>
         <li className={styles.listIntro}>
-          more time to run your business without having to think about all the
-          numbers; and
+          have more time to run your business without having to think about all the
+          numbers and
         </li>
         <li className={styles.listIntro}>
-          saved resources to run your business successfully.
+          save resources to run your business successfully.
         </li>
       </ul>
       <p className={styles.goalsHeading}>Our Goals</p>

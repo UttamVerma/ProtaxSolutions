@@ -82,6 +82,27 @@
   .image:hover{
     cursor: pointer;
   }
+
+  .developerInfoDiv{
+    padding-top: 2px;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+    background-image: linear-gradient(to right,white,lightblue);
+  }
+
+  .developerInfoText{
+    color: rgb(6, 44, 57);
+    font-weight: 500;
+  }
+
+  .nameText{
+    color: darkblue;
+    text-decoration: underline;
+  }
+
+  .nameText:hover{
+    cursor: pointer;
+  }
   
   @media all and (max-width: 1000px) {
     * {
@@ -501,6 +522,12 @@
     @media all and (max-width: 460px) {
       * {
         -webkit-tap-highlight-color: green;
+      }
+
+      .developerInfoText{
+        color: rgb(6, 44, 57);
+        font-weight: 500;
+        font-size: 12px;
       }
     
       .main {
