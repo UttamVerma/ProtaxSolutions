@@ -1,0 +1,2268 @@
+*::-webkit-scrollbar{
+    display: none;
+}
+
+.backgroundImageDiv{
+    width: 100%;
+    height: 580px;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.backgroundHeadingDiv{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+.backgroundHeading{
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: rgb(21, 101, 192);
+}
+
+.backgroundDescription{
+    margin-top: -20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #BE185D;
+}
+
+.listParent{
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.listParent li::before{
+    content: "•";
+    color: rgb(21, 101, 192);
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.list{
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color:  rgb(0, 39, 147); 
+    width: 35%;
+}
+
+.list:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.introHeading{
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: rgb(0, 150, 136);
+}
+
+.comapanyName{
+    font-weight: 500;
+    font-size: 40px;
+    color: rgb(104, 159, 56);
+}
+
+.introDescription{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(66, 65, 65);
+}
+
+.listParentForIntroduction{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.listIntro{
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: rgb(66, 65, 65);
+}
+
+.goalsHeading{
+    margin-top: 30px;
+    font-size: 35px;
+    color: rgb(0, 150, 136);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.goalsDescription{
+    margin-top: -20px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #BE185D;
+}
+
+.goalsList{
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.goals{
+    letter-spacing: 1px;
+    color: rgb(66, 65, 65);
+}
+
+.whyHeading{
+    margin-top: 30px;
+    font-size: 30px;
+    color: rgb(0, 150, 136);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.whyChooseDiv{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,35%);
+    margin: auto;
+    margin-top: 30px;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.whyChooseCard{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 90%;
+}
+
+.whyChooseCard:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.whyChooseImages{
+    width: 30%;
+    height: 35%;
+}
+
+.whyChooseText{
+    text-align: justify;
+    letter-spacing: 1px;
+    color: rgb(66, 65, 65);
+}
+
+.serviceHeading{
+    margin-top: 30px;
+    font-size: 30px;
+    color: rgb(0, 150, 136);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.servicesDescription{
+    margin-top: -20px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #BE185D;
+}
+
+.servicesDiv{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,32%);
+    margin: auto;
+    margin-top: 30px;
+    height: 600px;
+    gap: 2%;
+}
+
+.servicesCard{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 70%;
+    text-align: left;
+}
+
+.seeAllServicesDiv{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 200%;
+    margin-top: -120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.seeAllServicesDiv:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.servicesCard:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.serviceImage{
+    width: 100%;
+    border-radius: 10px;
+    height: 75%;
+}
+
+.serviceName{
+    font-size: 20px;
+    color: #BE185D;
+}
+
+.seeAllText{
+    font-size: 20px;
+    color: #BE185D;
+}
+
+.hameburgerMenuDiv{
+    width: 100%;
+    height: 110vh;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 80;
+    display: flex;
+    justify-content: end;
+}
+
+.rightToLeftSliderDiv{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 65%;
+    height: 100%;
+    background-color: white;
+}
+
+.topSection{
+    height: 40px;
+    background-image: linear-gradient(to left, rgb(5, 201, 5), rgb(101, 212, 249));
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.closeSymbol:hover{
+    color: rgba(226, 2, 2, 0.747);
+    cursor: pointer;
+}
+
+.quickLinksDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 40px;
+    font-weight: 500;
+    color: rgb(2, 189, 192);
+    margin-bottom: 6px;
+}
+
+.quickLinksDiv:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: rgb(244, 243, 243);
+}
+
+.quickLinkHeading{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.moveSymbol{
+    font-size: 24px;
+    color: darkblue;
+}
+
+@media all and (max-width:1100px){
+    .backgroundImageDiv{
+        width: 100%;
+        height: 580px;
+        background-size: cover;
+        box-sizing: border-box;
+        padding-top: 100px;
+    }
+    
+    .backgroundHeadingDiv{
+        width: 70%;
+        margin: auto;
+        text-align: left;
+    }
+    
+    .backgroundHeading{
+        font-size: 35px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: rgb(21, 101, 192);
+    }
+    
+    .backgroundDescription{
+        margin-top: -20px;
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: #BE185D;
+    }
+    
+    .listParent{
+        list-style-type: none;
+        line-height: 30px;
+    }
+    
+    .listParent li::before{
+        content: "•";
+        color: rgb(21, 101, 192);
+        margin-right: 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .list{
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color:  rgb(0, 39, 147); 
+        width: 45%;
+    }
+    
+    .list:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .introHeading{
+        font-size: 35px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: rgb(0, 150, 136);
+    }
+    
+    .comapanyName{
+        font-weight: 500;
+        font-size: 40px;
+        color: rgb(104, 159, 56);
+    }
+    
+    .introDescription{
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-size: 20px;
+        text-align: justify;
+        color: rgb(66, 65, 65);
+    }
+    
+    .listParentForIntroduction{
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: left;
+        line-height: 30px;
+    }
+    
+    .listIntro{
+        letter-spacing: 1px;
+        font-size: 20px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .goalsHeading{
+        margin-top: 30px;
+        font-size: 35px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .goalsDescription{
+        margin-top: -20px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .goalsList{
+        width: 70%;
+        margin: auto;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    
+    .goals{
+        letter-spacing: 1px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .whyHeading{
+        margin-top: 30px;
+        font-size: 30px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .whyChooseDiv{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        margin: auto;
+        margin-top: 30px;
+        height: 300px;
+        justify-content: space-between;
+    }
+    
+    .whyChooseCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px;
+        height: 90%;
+    }
+    
+    .whyChooseCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .whyChooseImages{
+        width: 30%;
+        height: 35%;
+    }
+    
+    .whyChooseText{
+        text-align: justify;
+        letter-spacing: 1px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .serviceHeading{
+        margin-top: 30px;
+        font-size: 30px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .servicesDescription{
+        margin-top: -20px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .servicesDiv{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(3,32%);
+        margin: auto;
+        margin-top: 30px;
+        height: 600px;
+        gap: 2%;
+    }
+    
+    .servicesCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 70%;
+        text-align: left;
+    }
+    
+    .seeAllServicesDiv{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 200%;
+        margin-top: -120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .seeAllServicesDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .servicesCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        border-radius: 10px;
+        height: 75%;
+    }
+    
+    .serviceName{
+        font-size: 20px;
+        color: #BE185D;
+    }
+    
+    .seeAllText{
+        font-size: 20px;
+        color: #BE185D;
+    }
+}
+
+@media all and (max-width:900px){
+    *::-webkit-scrollbar{
+        display: none;
+    }
+
+    .backgroundImageDiv{
+        width: 100%;
+        height: 580px;
+        background-size: cover;
+        box-sizing: border-box;
+        padding-top: 100px;
+    }
+    
+    .backgroundHeadingDiv{
+        width: 70%;
+        margin: auto;
+        text-align: left;
+    }
+    
+    .backgroundHeading{
+        font-size: 35px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: rgb(21, 101, 192);
+    }
+    
+    .backgroundDescription{
+        margin-top: -20px;
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: #BE185D;
+    }
+    
+    .listParent{
+        list-style-type: none;
+        line-height: 30px;
+    }
+    
+    .listParent li::before{
+        content: "•";
+        color: rgb(21, 101, 192);
+        margin-right: 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .list{
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color:  rgb(0, 39, 147); 
+        width: 60%;
+    }
+    
+    .list:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .introHeading{
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: rgb(0, 150, 136);
+    }
+    
+    .comapanyName{
+        font-weight: 500;
+        font-size: 30px;
+        color: rgb(104, 159, 56);
+    }
+    
+    .introDescription{
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-size: 20px;
+        text-align: justify;
+        color: rgb(66, 65, 65);
+    }
+    
+    .listParentForIntroduction{
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: left;
+        line-height: 30px;
+    }
+    
+    .listIntro{
+        letter-spacing: 1px;
+        font-size: 20px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .goalsHeading{
+        margin-top: 30px;
+        font-size: 35px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .goalsDescription{
+        margin-top: -20px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .goalsList{
+        width: 70%;
+        margin: auto;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    
+    .goals{
+        letter-spacing: 1px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .whyHeading{
+        margin-top: 30px;
+        font-size: 30px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .whyChooseDiv{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        margin: auto;
+        margin-top: 30px;
+        height: 300px;
+        justify-content: space-between;
+    }
+    
+    .whyChooseCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px;
+        height: 90%;
+    }
+    
+    .whyChooseCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .whyChooseImages{
+        width: 30%;
+        height: 30%;
+    }
+    
+    .whyChooseText{
+        text-align: left;
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .serviceHeading{
+        margin-top: 30px;
+        font-size: 30px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .servicesDescription{
+        margin-top: -20px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .servicesDiv{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        margin: auto;
+        margin-top: 30px;
+        height: 900px;
+        justify-content: space-between;
+    }
+    
+    .servicesCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
+        text-align: left;
+    }
+    
+    .seeAllServicesDiv{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
+        margin-top: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .seeAllServicesDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .servicesCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        border-radius: 10px;
+        height: 75%;
+    }
+    
+    .serviceName{
+        font-size: 20px;
+        color: #BE185D;
+    }
+    
+    .seeAllText{
+        font-size: 20px;
+        color: #BE185D;
+    }
+}
+
+@media all and (max-width:720px){
+    *::-webkit-scrollbar{
+        display: none;
+    }
+
+    .backgroundImageDiv{
+        width: 100%;
+        height: 580px;
+        background-size: cover;
+        box-sizing: border-box;
+        padding-top: 100px;
+    }
+    
+    .backgroundHeadingDiv{
+        width: 80%;
+        margin: auto;
+        text-align: left;
+    }
+    
+    .backgroundHeading{
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: rgb(21, 101, 192);
+    }
+    
+    .backgroundDescription{
+        margin-top: -20px;
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: #BE185D;
+    }
+    
+    .listParent{
+        list-style-type: none;
+        line-height: 30px;
+    }
+    
+    .listParent li::before{
+        content: "•";
+        color: rgb(21, 101, 192);
+        margin-right: 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .list{
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color:  rgb(0, 39, 147); 
+        width: 70%;
+    }
+    
+    .list:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .introHeading{
+        font-size: 25px;
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: rgb(0, 150, 136);
+    }
+    
+    .comapanyName{
+        font-weight: 500;
+        font-size: 25px;
+        color: rgb(104, 159, 56);
+    }
+    
+    .introDescription{
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-size: 20px;
+        text-align: justify;
+        color: rgb(66, 65, 65);
+    }
+    
+    .listParentForIntroduction{
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: left;
+        line-height: 30px;
+    }
+    
+    .listIntro{
+        letter-spacing: 1px;
+        font-size: 20px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .goalsHeading{
+        margin-top: 30px;
+        font-size: 35px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .goalsDescription{
+        margin-top: -20px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .goalsList{
+        width: 70%;
+        margin: auto;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    
+    .goals{
+        letter-spacing: 1px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .whyHeading{
+        margin-top: 30px;
+        font-size: 30px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .whyChooseDiv{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        margin: auto;
+        margin-top: 30px;
+        height: 300px;
+        justify-content: space-between;
+    }
+    
+    .whyChooseCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px;
+        height: 90%;
+    }
+    
+    .whyChooseCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .whyChooseImages{
+        width: 30%;
+        height: 27%;
+    }
+    
+    .whyChooseText{
+        text-align: left;
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .serviceHeading{
+        margin-top: 30px;
+        font-size: 30px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .servicesDescription{
+        margin-top: -20px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .servicesDiv{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        margin: auto;
+        margin-top: 30px;
+        height: 800px;
+        justify-content: space-between;
+    }
+    
+    .servicesCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
+        text-align: left;
+    }
+    
+    .seeAllServicesDiv{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
+        margin-top: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .seeAllServicesDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .servicesCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        border-radius: 10px;
+        height: 75%;
+    }
+    
+    .serviceName{
+        font-size: 20px;
+        color: #BE185D;
+    }
+    
+    .seeAllText{
+        font-size: 20px;
+        color: #BE185D;
+    }
+}
+
+@media all and (max-width:640px){
+    *::-webkit-scrollbar{
+        display: none;
+    }
+
+    .backgroundImageDiv{
+        width: 100%;
+        height: 580px;
+        background-size: cover;
+        box-sizing: border-box;
+        padding-top: 100px;
+    }
+    
+    .backgroundHeadingDiv{
+        width: 80%;
+        margin: auto;
+        text-align: left;
+    }
+    
+    .backgroundHeading{
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: rgb(21, 101, 192);
+    }
+    
+    .backgroundDescription{
+        margin-top: -20px;
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: #BE185D;
+    }
+    
+    .listParent{
+        list-style-type: none;
+        line-height: 30px;
+    }
+    
+    .listParent li::before{
+        content: "•";
+        color: rgb(21, 101, 192);
+        margin-right: 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .list{
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color:  rgb(0, 39, 147); 
+        width: 70%;
+    }
+    
+    .list:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .introHeading{
+        font-size: 25px;
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: rgb(0, 150, 136);
+    }
+    
+    .comapanyName{
+        font-weight: 500;
+        font-size: 25px;
+        color: rgb(104, 159, 56);
+    }
+    
+    .introDescription{
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-size: 20px;
+        text-align: justify;
+        color: rgb(66, 65, 65);
+    }
+    
+    .listParentForIntroduction{
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: left;
+        line-height: 30px;
+    }
+    
+    .listIntro{
+        letter-spacing: 1px;
+        font-size: 20px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .goalsHeading{
+        margin-top: 30px;
+        font-size: 35px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .goalsDescription{
+        margin-top: -20px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .goalsList{
+        width: 70%;
+        margin: auto;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    
+    .goals{
+        letter-spacing: 1px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .whyHeading{
+        margin-top: 30px;
+        font-size: 30px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .whyChooseDiv{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        margin: auto;
+        margin-top: 30px;
+        height: 350px;
+        justify-content: space-between;
+    }
+    
+    .whyChooseCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px;
+        height: 90%;
+    }
+    
+    .whyChooseCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .whyChooseImages{
+        width: 30%;
+        height: 27%;
+    }
+    
+    .whyChooseText{
+        text-align: left;
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .serviceHeading{
+        margin-top: 30px;
+        font-size: 30px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .servicesDescription{
+        margin-top: -20px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .servicesDiv{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        margin: auto;
+        margin-top: 30px;
+        height: 700px;
+        justify-content: space-between;
+    }
+    
+    .servicesCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
+        text-align: left;
+    }
+    
+    .seeAllServicesDiv{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
+        margin-top: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .seeAllServicesDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .servicesCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        border-radius: 10px;
+        height: 75%;
+    }
+    
+    .serviceName{
+        font-size: 20px;
+        color: #BE185D;
+    }
+    
+    .seeAllText{
+        font-size: 20px;
+        color: #BE185D;
+    }
+}
+
+@media all and (max-width:580px){
+    *::-webkit-scrollbar{
+        display: none;
+    }
+
+    .backgroundImageDiv{
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
+        padding-top: 100px;
+    }
+    
+    .backgroundHeadingDiv{
+        width: 80%;
+        margin: auto;
+        text-align: left;
+    }
+    
+    .backgroundHeading{
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: rgb(21, 101, 192);
+    }
+    
+    .backgroundDescription{
+        margin-top: 20px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: #BE185D;
+    }
+    
+    .listParent{
+        list-style-type: none;
+        line-height: 30px;
+    }
+    
+    .listParent li::before{
+        content: "•";
+        color: rgb(21, 101, 192);
+        margin-right: 10px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    
+    .list{
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color:  rgb(0, 39, 147); 
+        width: 70%;
+    }
+    
+    .list:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .introHeading{
+        font-size: 20px;
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: rgb(0, 150, 136);
+    }
+    
+    .comapanyName{
+        font-weight: 500;
+        font-size: 20px;
+        color: rgb(104, 159, 56);
+    }
+    
+    .introDescription{
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-size: 18px;
+        text-align: justify;
+        color: rgb(66, 65, 65);
+    }
+    
+    .listParentForIntroduction{
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: left;
+        line-height: 30px;
+    }
+    
+    .listIntro{
+        letter-spacing: 1px;
+        font-size: 18px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .goalsHeading{
+        margin-top: 30px;
+        font-size: 30px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .goalsDescription{
+        margin-top: -20px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .goalsList{
+        width: 70%;
+        margin: auto;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    
+    .goals{
+        letter-spacing: 1px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .whyHeading{
+        margin-top: 30px;
+        font-size: 25px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .whyChooseDiv{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        margin: auto;
+        margin-top: 30px;
+        height: 350px;
+        justify-content: space-between;
+    }
+    
+    .whyChooseCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px;
+        height: 90%;
+    }
+    
+    .whyChooseCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .whyChooseImages{
+        width: 30%;
+        height: 20%;
+    }
+    
+    .whyChooseText{
+        text-align: left;
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .serviceHeading{
+        margin-top: 30px;
+        font-size: 25px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .servicesDescription{
+        margin-top: -20px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .servicesDiv{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        margin: auto;
+        margin-top: 30px;
+        height: 700px;
+        justify-content: space-between;
+    }
+    
+    .servicesCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
+        text-align: left;
+    }
+    
+    .seeAllServicesDiv{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
+        margin-top: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .seeAllServicesDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .servicesCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        border-radius: 10px;
+        height: 70%;
+    }
+    
+    .serviceName{
+        font-size: 18px;
+        color: #BE185D;
+    }
+    
+    .seeAllText{
+        font-size: 18px;
+        color: #BE185D;
+    }
+}
+
+@media all and (max-width:520px){
+    *::-webkit-scrollbar{
+        display: none;
+    }
+
+    .backgroundImageDiv{
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        box-sizing: border-box;
+        padding-top: 100px;
+    }
+    
+    .backgroundHeadingDiv{
+        width: 80%;
+        margin: auto;
+        text-align: left;
+    }
+    
+    .backgroundHeading{
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: rgb(21, 101, 192);
+    }
+    
+    .backgroundDescription{
+        margin-top: 20px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: #BE185D;
+    }
+    
+    .listParent{
+        list-style-type: none;
+        line-height: 30px;
+    }
+    
+    .listParent li::before{
+        content: "•";
+        color: rgb(21, 101, 192);
+        margin-right: 10px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    
+    .list{
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color:  rgb(0, 39, 147); 
+        width: 70%;
+    }
+    
+    .list:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .introHeading{
+        font-size: 20px;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: rgb(0, 150, 136);
+    }
+    
+    .comapanyName{
+        font-weight: 500;
+        font-size: 20px;
+        color: rgb(104, 159, 56);
+    }
+    
+    .introDescription{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-size: 18px;
+        text-align: justify;
+        color: rgb(66, 65, 65);
+    }
+    
+    .listParentForIntroduction{
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: left;
+        line-height: 30px;
+    }
+    
+    .listIntro{
+        letter-spacing: 1px;
+        font-size: 18px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .goalsHeading{
+        margin-top: 30px;
+        font-size: 30px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .goalsDescription{
+        margin-top: -20px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .goalsList{
+        width: 80%;
+        margin: auto;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    
+    .goals{
+        letter-spacing: 1px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .whyHeading{
+        margin-top: 30px;
+        font-size: 25px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .whyChooseDiv{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        margin: auto;
+        margin-top: 30px;
+        height: 550px;
+        justify-content: space-between;
+    }
+    
+    .whyChooseCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px;
+        height: 90%;
+    }
+    
+    .whyChooseCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .whyChooseImages{
+        width: 30%;
+        height: 40%;
+    }
+    
+    .whyChooseText{
+        text-align: left;
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .serviceHeading{
+        margin-top: 30px;
+        font-size: 25px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .servicesDescription{
+        margin-top: -20px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .servicesDiv{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        margin: auto;
+        margin-top: 30px;
+        height: 1000px;
+        justify-content: space-between;
+    }
+    
+    .servicesCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 270px;
+        text-align: left;
+    }
+    
+    .seeAllServicesDiv{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
+        margin-top: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .seeAllServicesDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .servicesCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        border-radius: 10px;
+        height: 75%;
+    }
+    
+    .serviceName{
+        font-size: 18px;
+        color: #BE185D;
+    }
+    
+    .seeAllText{
+        font-size: 18px;
+        color: #BE185D;
+    }
+}
+
+@media all and (max-width:450px){
+    *::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .backgroundImageDiv{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        box-sizing: border-box;
+        padding-top: 50px;
+    }
+    
+    .backgroundHeadingDiv{
+        width: 90%;
+        margin: auto;
+        text-align: left;
+    }
+    
+    .backgroundHeading{
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: rgb(21, 101, 192);
+    }
+    
+    .backgroundDescription{
+        margin-top: 20px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: #BE185D;
+    }
+    
+    .listParent{
+        list-style-type: none;
+        line-height: 25px;
+    }
+    
+    .listParent li::before{
+        content: "•";
+        color: rgb(21, 101, 192);
+        margin-right: 10px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    
+    .list{
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: rgb(0, 39, 147); 
+        width: 90%;
+    }
+    
+    .list:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .introHeading{
+        font-size: 18px;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: rgb(0, 150, 136);
+    }
+    
+    .comapanyName{
+        font-weight: 500;
+        font-size: 18px;
+        color: rgb(104, 159, 56);
+    }
+    
+    .introDescription{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-align: justify;
+        color: rgb(66, 65, 65);
+    }
+    
+    .listParentForIntroduction{
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: left;
+        line-height: 30px;
+    }
+    
+    .listIntro{
+        letter-spacing: 1px;
+        font-size: 17px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .goalsHeading{
+        margin-top: 30px;
+        font-size: 20px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .goalsDescription{
+        margin-top: -20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .goalsList{
+        width: 85%;
+        margin: auto;
+        text-align: left;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .goals{
+        letter-spacing: 1px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .whyHeading{
+        margin-top: 30px;
+        font-size: 20px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .whyChooseDiv{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        margin: auto;
+        margin-top: 30px;
+        height: 550px;
+        justify-content: space-between;
+    }
+    
+    .whyChooseCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px;
+        height: 90%;
+    }
+    
+    .whyChooseCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .whyChooseImages{
+        width: 25%;
+        height: 30%;
+    }
+    
+    .whyChooseText{
+        text-align: left;
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .serviceHeading{
+        margin-top: 30px;
+        font-size: 20px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .servicesDescription{
+        margin-top: -20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .servicesDiv{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        margin: auto;
+        margin-top: 30px;
+        height: 1000px;
+        justify-content: space-between;
+    }
+    
+    .servicesCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 270px;
+        text-align: left;
+    }
+    
+    .seeAllServicesDiv{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
+        margin-top: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .seeAllServicesDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .servicesCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        border-radius: 10px;
+        height: 75%;
+    }
+    
+    .serviceName{
+        font-size: 18px;
+        color: #BE185D;
+    }
+    
+    .seeAllText{
+        font-size: 18px;
+        color: #BE185D;
+    }
+}
+
+@media all and (max-width:300px){
+    *::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .backgroundImageDiv{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        box-sizing: border-box;
+        padding-top: 50px;
+    }
+    
+    .backgroundHeadingDiv{
+        width: 90%;
+        margin: auto;
+        text-align: left;
+    }
+    
+    .backgroundHeading{
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: rgb(21, 101, 192);
+    }
+    
+    .backgroundDescription{
+        margin-top: 20px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: #BE185D;
+    }
+    
+    .listParent{
+        list-style-type: none;
+        line-height: 15px;
+    }
+    
+    .listParent li::before{
+        content: "•";
+        color: rgb(21, 101, 192);
+        margin-right: 10px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    
+    .list{
+        letter-spacing: 1px;
+        font-size: 13px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: rgb(0, 39, 147); 
+        width: 100%;
+    }
+    
+    .list:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .introHeading{
+        font-size: 18px;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: rgb(0, 150, 136);
+    }
+    
+    .comapanyName{
+        font-weight: 500;
+        font-size: 18px;
+        color: rgb(104, 159, 56);
+    }
+    
+    .introDescription{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-align: justify;
+        color: rgb(66, 65, 65);
+    }
+    
+    .listParentForIntroduction{
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: left;
+        line-height: 30px;
+    }
+    
+    .listIntro{
+        letter-spacing: 1px;
+        font-size: 17px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .goalsHeading{
+        margin-top: 30px;
+        font-size: 20px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .goalsDescription{
+        margin-top: -20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .goalsList{
+        width: 85%;
+        margin: auto;
+        text-align: left;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .goals{
+        letter-spacing: 1px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .whyHeading{
+        margin-top: 30px;
+        font-size: 20px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .whyChooseDiv{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        margin: auto;
+        margin-top: 30px;
+        height: 550px;
+        justify-content: space-between;
+    }
+    
+    .whyChooseCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px;
+        height: 90%;
+    }
+    
+    .whyChooseCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .whyChooseImages{
+        width: 25%;
+        height: 30%;
+    }
+    
+    .whyChooseText{
+        text-align: left;
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: rgb(66, 65, 65);
+    }
+    
+    .serviceHeading{
+        margin-top: 30px;
+        font-size: 20px;
+        color: rgb(0, 150, 136);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .servicesDescription{
+        margin-top: -20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #BE185D;
+    }
+    
+    .servicesDiv{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        margin: auto;
+        margin-top: 30px;
+        height: 1000px;
+        justify-content: space-between;
+    }
+    
+    .servicesCard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 270px;
+        text-align: left;
+    }
+    
+    .seeAllServicesDiv{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
+        margin-top: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .seeAllServicesDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .servicesCard:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+    
+    .serviceImage{
+        width: 100%;
+        border-radius: 10px;
+        height: 75%;
+    }
+    
+    .serviceName{
+        font-size: 18px;
+        color: #BE185D;
+    }
+    
+    .seeAllText{
+        font-size: 18px;
+        color: #BE185D;
+    }
+}

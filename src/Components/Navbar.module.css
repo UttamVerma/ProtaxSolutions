@@ -1,14 +1,182 @@
-.main{
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+}
+
+.afterScroll {
+  width: 100%;
+  transition: background-color 1s ease, box-shadow 1s ease;
+  display: flex;
+  background-color: transparent;
+  box-shadow: none;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logoImage {
+  width: 235px;
+  height: 50px;
+}
+
+.logoImage:hover {
+  cursor: pointer;
+}
+
+.optionsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.options {
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: black;
+  transition: color 1s ease, text-decoration 3s ease;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+}
+
+.options::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(176, 196, 222);
+  transition: width 1s ease;
+}
+
+.options:hover {
+  color: rgb(0, 206, 209);
+  cursor: pointer;
+}
+
+.options:hover::after {
+  width: 100%;
+}
+
+.hambergerMenu {
+  display: none;
+}
+
+.hameburgerMenuDiv {
+  width: 100%;
+  height: 110vh;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 80;
+  display: flex;
+  justify-content: end;
+}
+
+.rightToLeftSliderDiv {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 65%;
+  height: 100%;
+  background-image: linear-gradient(white, lightblue);
+  position: absolute;
+  right: 0;
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.topSection {
+  height: 40px;
+  background-image: linear-gradient(
+    to left,
+    rgb(5, 201, 5),
+    rgb(101, 212, 249)
+  );
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.closeSymbol {
+  font-size: 15px;
+}
+
+.closeSymbol:hover {
+  color: rgba(226, 2, 2, 0.747);
+  cursor: pointer;
+}
+
+.quickLinksDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 40px;
+  font-weight: 500;
+  color: rgb(2, 189, 192);
+  margin-bottom: 6px;
+}
+
+.quickLinksDiv:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: rgb(244, 243, 243);
+}
+
+.quickLinkHeading {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.moveSymbol {
+  font-size: 24px;
+  color: darkblue;
+}
+
+@media all and (max-width: 1050px) {
+  .main {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed ;
+    position: fixed;
     z-index: 50;
     top: 0;
-}
+  }
 
-.afterScroll{
+  .afterScroll {
     width: 100%;
     transition: background-color 1s ease, box-shadow 1s ease;
     display: flex;
@@ -16,400 +184,326 @@
     box-shadow: none;
     justify-content: space-around;
     align-items: center;
-    position: fixed ;
+    position: fixed;
     z-index: 50;
     top: 0;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+  }
 
-.logoImage{
-    width: 235px;
+  .logoImage {
+    width: 240px;
     height: 50px;
-}
+  }
 
-.logoImage:hover{
-    cursor: pointer;
-}
-
-.optionsDiv{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 30%;
-}
-
-.options {
+  .options {
     font-size: 17px;
     letter-spacing: 1px;
     color: black;
-    transition: color 1s ease, text-decoration 3s ease; 
+    transition: color 1s ease, text-decoration 3s ease;
     text-decoration: none;
     position: relative;
-}
+    font-weight: 500;
+  }
 
-.options::after {
+  .options::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px; 
+    bottom: -2px;
     width: 0;
     height: 2px;
     background-color: rgb(176, 196, 222);
-    transition: width 1s ease; 
-}
+    transition: width 1s ease;
+  }
 
-.options:hover {
+  .options:hover {
     color: rgb(0, 206, 209);
     cursor: pointer;
-}
+  }
 
-.options:hover::after {
-    width: 100%; 
-}
-
-.hambergerMenu{
+  .hambergerMenu {
     display: none;
+  }
 }
 
+@media all and (max-width: 950px) {
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+  }
 
-@media all and (max-width:1050px){
-    .main{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed ;
-        z-index: 50;
-        top: 0;
-    }
+  .afterScroll {
+    width: 100%;
+    transition: background-color 1s ease, box-shadow 1s ease;
+    display: flex;
+    background-color: transparent;
+    box-shadow: none;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
 
-    .afterScroll{
-        width: 100%;
-        transition: background-color 1s ease, box-shadow 1s ease;
-        display: flex;
-        background-color: transparent;
-        box-shadow: none;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed ;
-        z-index: 50;
-        top: 0;
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-    
-    .logoImage{
-        width: 240px;
-        height: 50px;
-    }
-    
-    .options {
-        font-size: 17px;
-        letter-spacing: 1px;
-        color: black;
-        transition: color 1s ease, text-decoration 3s ease; 
-        text-decoration: none;
-        position: relative;
-    }
-    
-    .options::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px; 
-        width: 0;
-        height: 2px;
-        background-color: rgb(176, 196, 222);
-        transition: width 1s ease; 
-    }
-    
-    .options:hover {
-        color: rgb(0, 206, 209);
-        cursor: pointer;
-    }
+  .logoImage {
+    width: 230px;
+    height: 50px;
+  }
 
-    .hambergerMenu{
-        display: none;
-    }
+  .optionsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+  }
+
+  .options {
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: black;
+    transition: color 1s ease, text-decoration 3s ease;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+  }
+
+  .options::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(176, 196, 222);
+    transition: width 1s ease;
+  }
+
+  .options:hover {
+    color: rgb(0, 206, 209);
+    cursor: pointer;
+  }
+
+  .hambergerMenu {
+    display: none;
+  }
 }
 
+@media all and (max-width: 767px) {
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+  }
 
-@media all and (max-width:950px){
-    .main{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed ;
-        z-index: 50;
-        top: 0;
-    }
+  .afterScroll {
+    width: 100%;
+    transition: background-color 1s ease, box-shadow 1s ease;
+    display: flex;
+    background-color: transparent;
+    box-shadow: none;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
 
-    .afterScroll{
-        width: 100%;
-        transition: background-color 1s ease, box-shadow 1s ease;
-        display: flex;
-        background-color: transparent;
-        box-shadow: none;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed ;
-        z-index: 50;
-        top: 0;
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-    
-    .logoImage{
-        width: 230px;
-        height: 50px;
-    }
+  .logoImage {
+    width: 220px;
+    height: 50px;
+  }
 
-    .optionsDiv{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 40%;
-    }
-    
-    .options {
-        font-size: 17px;
-        letter-spacing: 1px;
-        color: black;
-        transition: color 1s ease, text-decoration 3s ease; 
-        text-decoration: none;
-        position: relative;
-    }
-    
-    .options::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px; 
-        width: 0;
-        height: 2px;
-        background-color: rgb(176, 196, 222);
-        transition: width 1s ease; 
-    }
-    
-    .options:hover {
-        color: rgb(0, 206, 209);
-        cursor: pointer;
-    }
+  .optionsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+    box-sizing: border-box;
+    padding-right: 5%;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+  }
 
-    .hambergerMenu{
-        display: none;
-    }
+  .options {
+    display: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: black;
+    transition: color 1s ease, text-decoration 3s ease;
+    text-decoration: none;
+  }
+
+  .options::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(176, 196, 222);
+    transition: width 1s ease;
+  }
+
+  .options:hover {
+    cursor: pointer;
+    color: rgb(0, 206, 209);
+  }
+
+  .hambergerMenu {
+    display: block;
+    font-size: 16px;
+  }
+
+  .hambergerMenu:hover {
+    cursor: pointer;
+  }
 }
 
-@media all and (max-width:767px){
-    .main{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed ;
-        z-index: 50;
-        top: 0;
-    }
+@media all and (max-width: 600px) {
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+  }
 
-    .afterScroll{
-        width: 100%;
-        transition: background-color 1s ease, box-shadow 1s ease;
-        display: flex;
-        background-color: transparent;
-        box-shadow: none;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed ;
-        z-index: 50;
-        top: 0;
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-    
-    .logoImage{
-        width: 220px;
-        height: 50px;
-    }
-    
-    .optionsDiv{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 20%;
-        box-sizing: border-box;
-        padding-right: 5%;
-        text-decoration: none;
-        position: relative;
-    }
-    
-    .options{
-        display: none;
-        font-size: 17px;
-        letter-spacing: 1px;
-        color: black;
-        transition: color 1s ease, text-decoration 3s ease; 
-        text-decoration: none;
-    }
+  .afterScroll {
+    width: 100%;
+    transition: background-color 1s ease, box-shadow 1s ease;
+    display: flex;
+    background-color: transparent;
+    box-shadow: none;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
 
-    .options::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px; 
-        width: 0;
-        height: 2px;
-        background-color: rgb(176, 196, 222);
-        transition: width 1s ease; 
-    }
-    
-    .options:hover{
-        cursor: pointer;
-        color: rgb(0, 206, 209);
-    }
+  .logoImage {
+    width: 200px;
+    height: 45px;
+  }
 
-    .hambergerMenu{
-        display: block;
-        font-size: 16px;
-    }
+  .optionsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+    box-sizing: border-box;
+    padding-right: 5%;
+  }
 
-    .hambergerMenu:hover{
-        cursor: pointer;
-    }
-    
+  .options {
+    display: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: black;
+    transition: color 1s ease, text-decoration 3s ease;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .options::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(176, 196, 222);
+    transition: width 1s ease;
+  }
+
+  .options:hover {
+    cursor: pointer;
+    color: rgb(0, 206, 209);
+  }
+
+  .hambergerMenu {
+    display: block;
+    font-size: 15px;
+  }
+
+  .hambergerMenu:hover {
+    cursor: pointer;
+  }
 }
 
-@media all and (max-width:600px){
-    .main{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed ;
-        z-index: 50;
-        top: 0;
-    }
+@media all and (max-width: 500px) {
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+  }
 
-    .afterScroll{
-        width: 100%;
-        transition: background-color 1s ease, box-shadow 1s ease;
-        display: flex;
-        background-color: transparent;
-        box-shadow: none;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed ;
-        z-index: 50;
-        top: 0;
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-    
-    .logoImage{
-        width: 200px;
-        height: 45px;
-    }
-    
-    .optionsDiv{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 20%;
-        box-sizing: border-box;
-        padding-right: 5%;
-    }
-    
-    .options{
-        display: none;
-        font-size: 17px;
-        letter-spacing: 1px;
-        color: black;
-        transition: color 1s ease, text-decoration 3s ease; 
-        text-decoration: none;
-    }
+  .afterScroll {
+    width: 100%;
+    transition: background-color 1s ease, box-shadow 1s ease;
+    display: flex;
+    background-color: transparent;
+    box-shadow: none;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
 
-    .options::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px; 
-        width: 0;
-        height: 2px;
-        background-color: rgb(176, 196, 222);
-        transition: width 1s ease; 
-    }
-    
-    .options:hover{
-        cursor: pointer;
-        color: rgb(0, 206, 209);
-    }
+  .logoImage {
+    width: 200px;
+    height: 44px;
+  }
 
-    .hambergerMenu{
-        display: block;
-        font-size: 15px;
-    }
+  .optionsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+    box-sizing: border-box;
+    padding-right: 5%;
+  }
 
-    .hambergerMenu:hover{
-        cursor: pointer;
-    }
-}
+  .options {
+    display: none;
+  }
 
-@media all and (max-width:500px){
-    .main{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed ;
-        z-index: 50;
-        top: 0;
-    }
+  .options:hover {
+    cursor: pointer;
+  }
 
-    .afterScroll{
-        width: 100%;
-        transition: background-color 1s ease, box-shadow 1s ease;
-        display: flex;
-        background-color: transparent;
-        box-shadow: none;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed ;
-        z-index: 50;
-        top: 0;
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-    
-    .logoImage{
-        width: 200px;
-        height: 44px;
-    }
-    
-    .optionsDiv{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 20%;
-        box-sizing: border-box;
-        padding-right: 5%;
-    }
-    
-    .options{
-        display: none;
-    }
-    
-    .options:hover{
-        cursor: pointer;
-    }
+  .hambergerMenu {
+    display: block;
+    font-size: 15px;
+  }
 
-    .hambergerMenu{
-        display: block;
-        font-size: 15px;
-    }
-
-    .hambergerMenu:hover{
-        cursor: pointer;
-    }
+  .hambergerMenu:hover {
+    cursor: pointer;
+  }
 }

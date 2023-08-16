@@ -14,7 +14,7 @@ let AllRoutes=()=>{
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/services" element={<Services/>}/>
             <Route path="/service/:name" element={<IndivisualServices/>}/>
-            <Route path="service/related/:name" element={<RelatedService/>}/>
+            <Route path="/service/related/:name" element={<RelatedService/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
     )
