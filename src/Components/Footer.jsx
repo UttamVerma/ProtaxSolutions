@@ -156,7 +156,7 @@ let Footer = () => {
           <span className={styles.nameText}>
             <a href="https://api.whatsapp.com/send/?phone=9896125909&text=Hello&type=phone_number&app_absent=0" target="_blank">Uttam Verma & </a>
             <span className={styles.nameText}>
-              <a href="mailto:sakshamverma798@gmail.com">Saksham Verma</a>
+              <a href="mailto:sakshamverma798@gmail.com" target="_blank">Saksham Verma</a>
             </span>
           </span>
         </p>
