@@ -10,7 +10,6 @@ import safe from "../Components/Assets/shield.png";
 import qualified from "../Components/Assets/badge.png";
 import { useNavigate } from "react-router-dom";
 let HomePage = () => {
-  let [showHamburgerDiv,setShowHamburgerDiv]=useState(false);
   let [isLoading, setIsLoading] = useState(true);
   let navigate = useNavigate();
   let [servicesData, setServicesData] = useState([]);
@@ -77,22 +76,6 @@ let HomePage = () => {
   useEffect(() => {
     window.scroll({ top: 0, behavior: "smooth" });
   }, []);
-  let navigateHomeHandler=()=>{
-    setShowHamburgerDiv(false);
-    navigate("/");
-  }
-  let navigateAboutHandler=()=>{
-    setShowHamburgerDiv(false);
-    navigate("/about");
-  }
-  let navigateContactHandler=()=>{
-    setShowHamburgerDiv(false);
-    navigate("/contact");
-  }
-  let navigateServicesHandler=()=>{
-    setShowHamburgerDiv(false);
-    navigate("/services");
-  }
   return (
     <>
       <Navbar />
