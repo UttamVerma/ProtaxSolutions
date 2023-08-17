@@ -9,7 +9,9 @@ import Footer from "../Components/Footer";
 import safe from "../Components/Assets/shield.png";
 import qualified from "../Components/Assets/badge.png";
 import { useNavigate } from "react-router-dom";
+import backgroundImageForSmallScreen from "../Components/Assets/homepageImageForSmallScreenSizes.png";
 let HomePage = () => {
+  let [windowWidth, setWindowWidth] = useState(window.innerWidth);
   let [isLoading, setIsLoading] = useState(true);
   let navigate = useNavigate();
   let [servicesData, setServicesData] = useState([]);
@@ -76,12 +78,22 @@ let HomePage = () => {
   useEffect(() => {
     window.scroll({ top: 0, behavior: "smooth" });
   }, []);
+  useEffect(() => {
+    let handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  let backgroundImageForSettingUp = windowWidth > 767 ? backgroundImage : backgroundImageForSmallScreen;
   return (
     <>
       <Navbar />
       <div
         className={styles.backgroundImageDiv}
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url(${backgroundImageForSettingUp})` }}
       >
         <div className={styles.backgroundHeadingDiv}>
           <p className={styles.backgroundHeading}>
