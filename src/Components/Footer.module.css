@@ -91,11 +91,13 @@
   }
 
   .developerInfoText{
+    font-size: 13px;
     color: rgb(6, 44, 57);
     font-weight: 500;
   }
 
   .nameText{
+    font-size: 13px;
     color: darkblue;
     text-decoration: underline;
   }

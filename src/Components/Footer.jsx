@@ -12,26 +12,26 @@ let Footer = () => {
     navigate("/");
     window.scroll({ top: 0, behavior: "smooth" });
   };
-  let msmeHandler=()=>{
-    navigate("/service/MSME Registration")
+  let msmeHandler = () => {
+    navigate("/service/MSME Registration");
     window.scroll({ top: 0, behavior: "smooth" });
-  }
-  let businessHandler=()=>{
-    navigate("/service/Business Registration")
+  };
+  let businessHandler = () => {
+    navigate("/service/Business Registration");
     window.scroll({ top: 0, behavior: "smooth" });
-  }
-  let auditHandler=()=>{
-    navigate("/service/Audit")
+  };
+  let auditHandler = () => {
+    navigate("/service/Audit");
     window.scroll({ top: 0, behavior: "smooth" });
-  }
-  let financialHandler=()=>{
-    navigate("/service/Financial Consulting")
+  };
+  let financialHandler = () => {
+    navigate("/service/Financial Consulting");
     window.scroll({ top: 0, behavior: "smooth" });
-  }
-  let gstHandler=()=>{
-    navigate("/service/GST Compliances")
+  };
+  let gstHandler = () => {
+    navigate("/service/GST Compliances");
     window.scroll({ top: 0, behavior: "smooth" });
-  }
+  };
   return (
     <>
       <div className={styles.main}>
@@ -89,16 +89,10 @@ let Footer = () => {
         </div>
         <div className={styles.parentDiv}>
           <p className={styles.followDivHeading}>Popular Services</p>
-          <p
-            className={styles.popularServices}
-            onClick={() => msmeHandler()}
-          >
+          <p className={styles.popularServices} onClick={() => msmeHandler()}>
             MSME Registration
           </p>
-          <p
-            className={styles.popularServices}
-            onClick={() => auditHandler()}
-          >
+          <p className={styles.popularServices} onClick={() => auditHandler()}>
             Audit
           </p>
           <p
@@ -107,10 +101,7 @@ let Footer = () => {
           >
             Business Registration
           </p>
-          <p
-            className={styles.popularServices}
-            onClick={() => gstHandler()}
-          >
+          <p className={styles.popularServices} onClick={() => gstHandler()}>
             GST Compliances
           </p>
           <p
@@ -160,7 +151,15 @@ let Footer = () => {
         </div>
       </div>
       <div className={styles.developerInfoDiv}>
-        <p className={styles.developerInfoText}>Crafted with care by <span className={styles.nameText}>Uttam Verma & Saksham Verma</span></p>
+        <p className={styles.developerInfoText}>
+          Crafted with care by{" "}
+          <span className={styles.nameText}>
+            <a href="https://api.whatsapp.com/send/?phone=9896125909&text=Hello&type=phone_number&app_absent=0" target="_blank">Uttam Verma & </a>
+            <span className={styles.nameText}>
+              <a href="mailto:sakshamverma798@gmail.com">Saksham Verma</a>
+            </span>
+          </span>
+        </p>
       </div>
     </>
   );
