@@ -76,7 +76,7 @@ let Footer = () => {
               />
             </a>
             <a
-              href="https://api.whatsapp.com/send/?phone=6202845813&text=Hello&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=9878856649&text=Hello&type=phone_number&app_absent=0"
               target="_blank"
             >
               <img
