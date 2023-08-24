@@ -135,7 +135,7 @@ let Footer = () => {
             className={styles.popularServices}
             onClick={() => navigate("/services")}
           >
-            Our Services
+            What we do
           </p>
         </div>
         <div className={styles.parentDiv}>

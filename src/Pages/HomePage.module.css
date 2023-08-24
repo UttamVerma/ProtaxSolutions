@@ -4,7 +4,7 @@
 
 .backgroundImageDiv{
     width: 100%;
-    height: 580px;
+    height: 500px;
     background-size: cover;
     box-sizing: border-box;
     padding-top: 100px;
@@ -121,6 +121,7 @@
 
 .goals{
     letter-spacing: 1px;
+    margin-bottom: 7px;
     color: rgb(66, 65, 65);
 }
 
@@ -313,10 +314,10 @@
 @media all and (max-width:1300px){
     .backgroundImageDiv{
         width: 100%;
-        height: 600px;
+        height: 500px;
         background-size: cover;
         box-sizing: border-box;
-        padding-top: 50px;
+        padding-top: 100px;
     }
 
     .list{
@@ -332,10 +333,10 @@
 @media all and (max-width:1100px){
     .backgroundImageDiv{
         width: 100%;
-        height: 650px;
+        height: 500px;
         background-size: cover;
         box-sizing: border-box;
-        padding-top: 50px;
+        padding-top: 100px;
     }
     
     .backgroundHeadingDiv{
@@ -574,10 +575,10 @@
 
     .backgroundImageDiv{
         width: 100%;
-        height: 650px;
+        height: 500px;
         background-size: cover;
         box-sizing: border-box;
-        padding-top: 30px;
+        padding-top: 100px;
     }
     
     .backgroundHeadingDiv{
@@ -817,10 +818,10 @@
 
     .backgroundImageDiv{
         width: 100%;
-        height: 500px;
+        height: 450px;
         background-size: cover;
         box-sizing: border-box;
-        padding-top: 50px;
+        padding-top: 100px;
     }
     
     .backgroundHeadingDiv{
@@ -846,7 +847,7 @@
     
     .listParent{
         list-style-type: none;
-        line-height: 25px;
+        line-height: 30px;
     }
     
     .listParent li::before{
@@ -1063,10 +1064,10 @@
 
     .backgroundImageDiv{
         width: 100%;
-        height: 500px;
+        height: 450px;
         background-size: cover;
         box-sizing: border-box;
-        padding-top: 50px;
+        padding-top: 100px;
     }
     
     .backgroundHeadingDiv{
@@ -1092,7 +1093,7 @@
     
     .listParent{
         list-style-type: none;
-        line-height: 25px;
+        line-height: 30px;
     }
     
     .listParent li::before{
@@ -1309,14 +1310,14 @@
 
     .backgroundImageDiv{
         width: 100%;
-        height: 450px;
+        height: 350px;
         background-size: cover;
         box-sizing: border-box;
         padding-top: 50px;
     }
     
     .backgroundHeadingDiv{
-        width: 80%;
+        width: 70%;
         margin: auto;
         text-align: left;
     }
@@ -1555,7 +1556,7 @@
 
     .backgroundImageDiv{
         width: 100%;
-        height: 420px;
+        height: 330px;
         background-size: cover;
         box-sizing: border-box;
         padding-top: 50px;
@@ -1801,10 +1802,10 @@
     
     .backgroundImageDiv{
         width: 100%;
-        height: 400px;
+        height: 300px;
         background-size: cover;
         box-sizing: border-box;
-        padding-top: 50px;
+        padding-top: 70px;
     }
     
     .backgroundHeadingDiv{
@@ -1856,7 +1857,7 @@
     }
     
     .introHeading{
-        font-size: 18px;
+        font-size: 17px;
         width: 90%;
         margin: auto;
         margin-top: 30px;
@@ -1867,7 +1868,7 @@
     
     .comapanyName{
         font-weight: 500;
-        font-size: 18px;
+        font-size: 17px;
         color: rgb(104, 159, 56);
     }
     
@@ -2047,10 +2048,10 @@
     
     .backgroundImageDiv{
         width: 100%;
-        height: 400px;
+        height: 300px;
         background-size: cover;
         box-sizing: border-box;
-        padding-top: 50px;
+        padding-top: 40px;
     }
     
     .backgroundHeadingDiv{
