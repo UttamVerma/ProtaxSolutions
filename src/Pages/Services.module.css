@@ -11,28 +11,17 @@
     color: dodgerblue;
 }
 
-.exploreDescription{
-    letter-spacing: 1px;
-    color: #004080;
-    font-size: 20px;
-    margin-bottom: 40px;
+.viewMore{
+    font-weight: 200;
+    color: rgb(112, 33, 33);
 }
 
-.servicesCardParentDiv{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,49%);
-    justify-content: space-between;
-    align-items: center;
+.viewMore:hover{
+    text-decoration: underline;
 }
 
-.serviceCard{
-    height: 560px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    padding: 10px;
-    text-align: left;
+.loadingGif{
+    margin-left: 75%;
 }
 
 .serviceImage{
@@ -52,41 +41,59 @@
     }
 }
 
+.exploreDescription{
+    letter-spacing: 1px;
+    color: #004080;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.servicesCardParentDiv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,49%);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serviceCard{
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-top: 10%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
 .serviceName{
     letter-spacing: 1px;
     font-weight: 500;
     font-size: 25px;
     color: #DC143C;
+    margin: auto;
 }
 
 .serviceDesc{
     letter-spacing: 1px;
     font-size: 17px;
-    margin-top: -10px;
+    margin-top: 20px;
     color: rgb(67, 19, 19);
-}
-
-.viewMore{
-    font-weight: 200;
-    color: rgb(112, 33, 33);
-}
-
-.viewMore:hover{
-    text-decoration: underline;
-}
-
-.loadingGif{
-    margin-left: 75%;
+    text-align: justify;
 }
 
 .notSureDiv{
     width: 100%;
-    height: 95%;
+    height: 300px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    box-sizing: border-box; 
-    padding-top: 15%;
+    box-sizing: border-box;
+    padding: 1%;
+    text-align: center;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 10px;
 }
 .notSureDiv:hover{
@@ -97,20 +104,20 @@
     font-size: 22px;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .notSurePhoneText{
     width: 90%;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     letter-spacing: 1px;
     color: #004080;
 }
 
 .seperateColorText{
     color: rgb(67, 19, 19);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -132,7 +139,7 @@
         letter-spacing: 1px;
         color: #004080;
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     
     .servicesCardParentDiv{
@@ -144,13 +151,15 @@
     }
     
     .serviceCard{
-        height: 560px;
+        height: 300px;
         margin-top: 20px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        text-align: left;
-        padding-bottom: 30px;
+        padding-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
     
     .serviceImage{
@@ -175,12 +184,14 @@
         font-weight: 500;
         font-size: 25px;
         color: #DC143C;
+        margin: auto;
     }
     
     .serviceDesc{
         letter-spacing: 1px;
         font-size: 17px;
-        margin-top: -10px;
+        margin-top: 20px;
+        text-align: justify;
         color: rgb(67, 19, 19);
     }
     
@@ -191,6 +202,43 @@
     
     .viewMore:hover{
         text-decoration: underline;
+    }
+
+    .notSureDiv{
+        width: 100%;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        box-sizing: border-box;
+        padding: 1%;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .notSureDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .notSureHeading{
+        font-size: 22px;
+        margin-top: 10px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    
+    .notSurePhoneText{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        color: #004080;
+    }
+    
+    .seperateColorText{
+        color: rgb(67, 19, 19);
+        font-size: 16px;
+        font-weight: 500;
     }
 }
 
@@ -212,7 +260,8 @@
         letter-spacing: 1px;
         color: #004080;
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        text-align: justify;
     }
     
     .servicesCardParentDiv{
@@ -224,12 +273,15 @@
     }
     
     .serviceCard{
-        height: 560px;
+        height: 300px;
         margin-top: 20px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        text-align: left;
+        padding-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
     
     .serviceImage{
@@ -253,13 +305,15 @@
         letter-spacing: 1px;
         font-weight: 500;
         font-size: 25px;
+        margin: auto;
         color: #DC143C;
     }
     
     .serviceDesc{
         letter-spacing: 1px;
         font-size: 17px;
-        margin-top: -10px;
+        margin-top: 20px;
+        text-align: justify;
         color: rgb(67, 19, 19);
     }
     
@@ -291,7 +345,8 @@
         letter-spacing: 1px;
         color: #004080;
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        text-align: justify;
     }
     
     .servicesCardParentDiv{
@@ -303,12 +358,15 @@
     }
     
     .serviceCard{
-        height: 560px;
+        height: 300px;
         margin-top: 20px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        text-align: left;
+        padding-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
     
     .serviceImage{
@@ -332,13 +390,15 @@
         letter-spacing: 1px;
         font-weight: 500;
         font-size: 22px;
+        margin: auto;
         color: #DC143C;
     }
     
     .serviceDesc{
         letter-spacing: 1px;
         font-size: 16px;
-        margin-top: -10px;
+        margin-top: 20px;
+        text-align: justify;
         color: rgb(67, 19, 19);
     }
     
@@ -370,7 +430,8 @@
         letter-spacing: 1px;
         color: #004080;
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        text-align: justify;
     }
     
     .servicesCardParentDiv{
@@ -382,12 +443,15 @@
     }
     
     .serviceCard{
-        height: 560px;
+        height: 300px;
         margin-top: 20px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        text-align: left;
+        padding-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
     
     .serviceImage{
@@ -416,12 +480,14 @@
         font-weight: 500;
         font-size: 20px;
         color: #DC143C;
+        margin: auto;
     }
     
     .serviceDesc{
         letter-spacing: 1px;
         font-size: 16px;
-        margin-top: -10px;
+        margin-top: 20px;
+        text-align: justify;
         color: rgb(67, 19, 19);
     }
     
@@ -436,26 +502,30 @@
 
     .notSureDiv{
         width: 100%;
-        height: 95%;
+        height: 300px;
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-        box-sizing: border-box; 
-        padding-top: 15%;
+        box-sizing: border-box;
+        padding: 1%;
+        text-align: center;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 20px;
         border-radius: 10px;
+    }
+    .notSureDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     
     .notSureHeading{
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 500;
         letter-spacing: 1px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
     
     .notSurePhoneText{
         width: 90%;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         letter-spacing: 1px;
         color: #004080;
     }
@@ -485,7 +555,8 @@
         letter-spacing: 1px;
         color: #004080;
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        text-align: justify;
     }
     
     .servicesCardParentDiv{
@@ -497,12 +568,15 @@
     }
     
     .serviceCard{
-        height: 560px;
+        height: 300px;
         margin-top: 20px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        text-align: left;
+        padding-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
     
     .serviceImage{
@@ -531,12 +605,14 @@
         font-weight: 500;
         font-size: 20px;
         color: #DC143C;
+        margin: auto;
     }
     
     .serviceDesc{
         letter-spacing: 1px;
         font-size: 16px;
-        margin-top: -10px;
+        margin-top: 20px;
+        text-align: justify;
         color: rgb(67, 19, 19);
     }
     
@@ -547,6 +623,42 @@
     
     .viewMore:hover{
         text-decoration: underline;
+    }
+
+    .notSureDiv{
+        width: 100%;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        box-sizing: border-box;
+        padding: 1%;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .notSureDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .notSureHeading{
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    
+    .notSurePhoneText{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        color: #004080;
+    }
+    
+    .seperateColorText{
+        color: rgb(67, 19, 19);
+        font-size: 15px;
+        font-weight: 500;
     }
 }
 
@@ -568,7 +680,8 @@
         letter-spacing: 1px;
         color: #004080;
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        text-align: justify;
     }
     
     .servicesCardParentDiv{
@@ -580,12 +693,15 @@
     }
     
     .serviceCard{
-        height: 560px;
+        height: 300px;
         margin-top: 20px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        text-align: left;
+        padding-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
     
     .serviceImage{
@@ -614,12 +730,14 @@
         font-weight: 500;
         font-size: 20px;
         color: #DC143C;
+        margin: auto;
     }
     
     .serviceDesc{
         letter-spacing: 1px;
         font-size: 16px;
-        margin-top: -10px;
+        margin-top: 20px;
+        text-align: justify;
         color: rgb(67, 19, 19);
     }
     
@@ -630,6 +748,42 @@
     
     .viewMore:hover{
         text-decoration: underline;
+    }
+
+    .notSureDiv{
+        width: 100%;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        box-sizing: border-box;
+        padding: 1%;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .notSureDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .notSureHeading{
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    
+    .notSurePhoneText{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        color: #004080;
+    }
+    
+    .seperateColorText{
+        color: rgb(67, 19, 19);
+        font-size: 15px;
+        font-weight: 500;
     }
 }
 
@@ -651,7 +805,8 @@
         letter-spacing: 1px;
         color: #004080;
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        text-align: justify;
     }
     
     .servicesCardParentDiv{
@@ -663,12 +818,15 @@
     }
     
     .serviceCard{
-        height: 560px;
+        height: 300px;
         margin-top: 20px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        text-align: left;
+        padding-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
 
     .loadingGif{
@@ -697,12 +855,14 @@
         font-weight: 500;
         font-size: 19px;
         color: #DC143C;
+        margin: auto;
     }
     
     .serviceDesc{
         letter-spacing: 1px;
         font-size: 15px;
-        margin-top: -10px;
+        margin-top: 20px;
+        text-align: justify;
         color: rgb(67, 19, 19);
     }
     
@@ -713,6 +873,43 @@
     
     .viewMore:hover{
         text-decoration: underline;
+    }
+
+    .notSureDiv{
+        width: 100%;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        box-sizing: border-box;
+        padding: 1%;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .notSureDiv:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .notSureHeading{
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    
+    .notSurePhoneText{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: #004080;
+    }
+    
+    .seperateColorText{
+        color: rgb(67, 19, 19);
+        font-size: 14px;
+        font-weight: 500;
     }
 }
 
@@ -734,7 +931,8 @@
         letter-spacing: 1px;
         color: #004080;
         font-size: 18px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        text-align: justify;
     }
     
     .servicesCardParentDiv{
@@ -746,12 +944,15 @@
     }
     
     .serviceCard{
-        height: 450px;
+        height: 300px;
         margin-top: 20px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        text-align: left;
+        padding-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
     
     .serviceImage{
@@ -779,14 +980,16 @@
     .serviceName{
         letter-spacing: 1px;
         font-weight: 500;
-        font-size: 19px;
+        font-size: 20px;
         color: #DC143C;
+        margin: auto;
     }
     
     .serviceDesc{
         letter-spacing: 1px;
-        font-size: 15px;
-        margin-top: -10px;
+        font-size: 17px;
+        margin-top: 20px;
+        text-align: justify;
         color: rgb(67, 19, 19);
     }
     
@@ -814,13 +1017,13 @@
         font-size: 18px;
         font-weight: 500;
         letter-spacing: 1px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     
     .notSurePhoneText{
         width: 90%;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         letter-spacing: 1px;
         color: #004080;
     }
@@ -850,7 +1053,8 @@
         letter-spacing: 1px;
         color: #004080;
         font-size: 16px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        text-align: justify;
     }
     
     .servicesCardParentDiv{
@@ -867,12 +1071,15 @@
     }
     
     .serviceCard{
-        height: 450px;
+        height: 300px;
         margin-top: 20px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        text-align: left;
+        padding-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
     
     .serviceImage{
@@ -896,13 +1103,14 @@
         letter-spacing: 1px;
         font-weight: 500;
         font-size: 18px;
+        margin: auto;
         color: #DC143C;
     }
     
     .serviceDesc{
         letter-spacing: 1px;
-        font-size: 14px;
-        margin-top: -10px;
+        font-size: 16px;
+        margin-top: 20px;
         text-align: justify;
         color: rgb(67, 19, 19);
     }
@@ -933,10 +1141,11 @@
     }
     
     .exploreDescription{
-        text-align: center;
+        text-align: justify;
         letter-spacing: 1px;
         color: #004080;
         font-size: 15px;
+        margin-bottom: 20px;
     }
     
     .servicesCardParentDiv{
@@ -948,12 +1157,15 @@
     }
     
     .serviceCard{
-        height: 450px;
+        height: 300px;
         margin-top: 20px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        text-align: left;
+        padding-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
 
     .loadingGif{
@@ -981,14 +1193,15 @@
     .serviceName{
         letter-spacing: 1px;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 17px;
         color: #DC143C;
+        margin: auto;
     }
     
     .serviceDesc{
         letter-spacing: 1px;
-        font-size: 14px;
-        margin-top: -10px;
+        font-size: 15px;
+        margin-top: 20px;
         text-align: justify;
         color: rgb(67, 19, 19);
     }
@@ -1019,10 +1232,11 @@
     }
     
     .exploreDescription{
-        text-align: center;
+        text-align: justify;
         letter-spacing: 1px;
         color: #004080;
         font-size: 15px;
+        margin-bottom: 10px;
     }
     
     .servicesCardParentDiv{
@@ -1039,12 +1253,15 @@
     }
     
     .serviceCard{
-        height: 400px;
+        height: 300px;
         margin-top: 20px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        text-align: left;
+        padding-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
     
     .serviceImage{
@@ -1067,15 +1284,16 @@
     .serviceName{
         letter-spacing: 1px;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 17px;
+        margin: auto;
         color: #DC143C;
     }
     
     .serviceDesc{
         letter-spacing: 1px;
-        font-size: 13px;
-        margin-top: -10px;
-        text-align: left;
+        font-size: 14px;
+        margin-top: 20px;
+        text-align: justify;
         color: rgb(67, 19, 19);
     }
     
@@ -1105,10 +1323,11 @@
     }
     
     .exploreDescription{
-        text-align: center;
+        text-align: justify;
         letter-spacing: 1px;
         color: #004080;
         font-size: 15px;
+        margin-bottom: 10px;
     }
     
     .servicesCardParentDiv{
@@ -1120,12 +1339,15 @@
     }
     
     .serviceCard{
-        height: 400px;
+        height: 300px;
         margin-top: 20px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        text-align: left;
+        padding-top: 10%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
     }
     
     .serviceImage{
@@ -1154,14 +1376,15 @@
         letter-spacing: 1px;
         font-weight: 500;
         font-size: 13px;
+        margin: auto;
         color: #DC143C;
     }
     
     .serviceDesc{
         letter-spacing: 1px;
         font-size: 11px;
-        margin-top: -10px;
-        text-align: left;
+        margin-top: 20px;
+        text-align: justify;
         color: rgb(67, 19, 19);
     }
     

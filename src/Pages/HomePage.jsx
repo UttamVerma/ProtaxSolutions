@@ -82,12 +82,13 @@ let HomePage = () => {
     let handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
-  let backgroundImageForSettingUp = windowWidth > 767 ? backgroundImage : backgroundImageForSmallScreen;
+  let backgroundImageForSettingUp =
+    windowWidth > 767 ? backgroundImage : backgroundImageForSmallScreen;
   return (
     <>
       <Navbar />
@@ -96,9 +97,9 @@ let HomePage = () => {
         style={{ backgroundImage: `url(${backgroundImageForSettingUp})` }}
       >
         <div className={styles.backgroundHeadingDiv}>
-          <p className={styles.backgroundHeading}>
+          {/* <p className={styles.backgroundHeading}>
             Navigating Prosperity : Your Financial Journey Begins here
-          </p>
+          </p> */}
           <p className={styles.backgroundDescription}>Trust Upon Us</p>
           <p className={styles.backgroundHeading}>Explore Our Top Services</p>
           <ul className={styles.listParent}>
@@ -130,36 +131,47 @@ let HomePage = () => {
         </div>
       </div>
       <p className={styles.introHeading}>
-        Discover <span className={styles.comapanyName}>ProTax Solutions</span> :
+        Discover <span className={styles.comapanyName}>Protax Solutions</span> :
         Innovating the Future with Excellence
       </p>
       <p className={styles.introDescription}>
-        Protax Solutions is proud to be a business accounting services.
+        Welcome to Building Better Business - your premier full-service firm
+        dedicated to facilitating seamless business setups in India. Our
+        expertise spans a diverse range of domains including FEMA compliance,
+        Expatriates Taxation, Accounting Outsourcing, Auditing, and Transaction
+        Advisory services.
       </p>
       <p className={styles.introDescription}>
-        Whether your business is new or old, it needs efficient accounting
-        services for growth and sustainability. Having your books in top shape
-        all year round is an achievement that can help your business function
-        smoothly and provide grounds for sound and promising business decisions.
+        At Building Better Business, we are driven by a strong set of values
+        that underpin everything we do. With a robust presence across the
+        country, we are committed to meeting the comprehensive tax planning and
+        management consulting requirements of our esteemed clients throughout
+        India.
       </p>
       <p className={styles.introDescription}>
-        Protax Solutions to take care of all you’re accounting needs, you will
-        be ensuring yourself a step in the right direction. By letting us be
-        your professional accountant you will:
+        Explore our comprehensive suite of services designed to empower
+        businesses with the tools and knowledge they need to thrive. Whether
+        you're embarking on a new business venture, navigating complex
+        regulatory landscapes, or seeking strategic financial advice, our
+        dedicated team is here to guide you every step of the way.
       </p>
-      <ul className={styles.listParentForIntroduction}>
+      <p className={styles.introDescription}>
+        Join us in building a brighter business future. Your success is our
+        business!
+      </p>
+      {/* <ul className={styles.listParentForIntroduction}>
         <li className={styles.listIntro}>
           avail the services of highly qualified, experienced accounting
           professionals.
         </li>
         <li className={styles.listIntro}>
-          have more time to run your business without having to think about all the
-          numbers and
+          have more time to run your business without having to think about all
+          the numbers and
         </li>
         <li className={styles.listIntro}>
           save resources to run your business successfully.
         </li>
-      </ul>
+      </ul> */}
       <p className={styles.goalsHeading}>Our Goals</p>
       <p className={styles.goalsDescription}>
         Realizing Goals , Shaping Financial Futures

@@ -57,10 +57,13 @@ let Services = () => {
       <div className={styles.main}>
         <p className={styles.exploreHeading}>Explore Our Top Services</p>
         <p className={styles.exploreDescription}>
-          Unlock Financial Success with Our Trusted Services. Our experienced
-          experts guide you through a wide array of financial matters, from
-          personalized wealth management to strategic planning. Explore our
-          popular services to secure your future with confidence.
+          Empower Your Journey to Financial Success with Our Proven Services.
+          Our team of experienced experts is dedicated to steering you through a
+          comprehensive range of financial intricacies, offering personalized
+          wealth management and strategic planning that aligns with your unique
+          goals. Immerse yourself in a world of our acclaimed services,
+          meticulously crafted to pave the way for a future brimming with
+          confidence and prosperity.
         </p>
         <div className={styles.servicesCardParentDiv}>
           {loading ? (
@@ -71,14 +74,14 @@ let Services = () => {
                   key={item.id}
                   onClick={() => navigate(`/service/${item.name}`)}
                 >
-                  <img
+                  {/* <img
                     src={item.img1}
                     alt={`${item.name} image`}
                     className={styles.serviceImage}
-                  />
+                  /> */}
                   <p className={styles.serviceName}>{item.name}</p>
                   <p className={styles.serviceDesc}>
-                    {truncateWords(item.description1, 30)}{" "}
+                    {truncateWords(item.description1, 35)}{" "}
                     <span
                       className={styles.viewMore}
                       onClick={() => navigate(`/service/${item.name}`)}

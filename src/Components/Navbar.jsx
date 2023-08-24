@@ -1,5 +1,5 @@
 import styles from "./Navbar.module.css";
-import logo from "../Components/Assets/logoprotaxfinal.png";
+import logo from "../Components/Assets/protax-solutions-logo-cropped.jpg";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 let Navbar = () => {
@@ -80,7 +80,7 @@ let Navbar = () => {
               navigate("/services");
             }}
           >
-            Services
+            What we do 
           </p>
           <p
             className={styles.hambergerMenu}
@@ -130,7 +130,7 @@ let Navbar = () => {
               className={styles.quickLinksDiv}
               onClick={() => navigateServicesHandler()}
             >
-              <p className={styles.quickLinkHeading}>Our Services</p>
+              <p className={styles.quickLinkHeading}>What we do</p>
               <p className={styles.moveSymbol}>→</p>
             </div>
           </div>

@@ -16,6 +16,10 @@ let IndivisualServices = () => {
   let [relatedServices, setRelatedServices] = useState([]);
   let [service, setService] = useState([]);
   let [loading, setLoading] = useState(true);
+  let [featuresHeading, setFeaturesHeading] = useState("");
+  let [featuresList, setFeaturesList] = useState([]);
+  let [benefitsHeading, setBenefitsHeading] = useState("");
+  let [benefitsList, setBenefitsList] = useState([]);
   let { name } = useParams();
   let firebaseConfig = {
     apiKey: "AIzaSyAy3b_KQ9SuERsygoLmEJvMZtBYk7TMbuE",
@@ -38,6 +42,14 @@ let IndivisualServices = () => {
         });
         setService(servicesArray[0]);
         setLoading(false);
+        if (servicesArray[0]?.features_Heading) {
+          setFeaturesHeading(servicesArray[0].features_Heading);
+          setFeaturesList(servicesArray[0].features);
+        }
+        if (servicesArray[0]?.benefits_Heading) {
+          setBenefitsHeading(servicesArray[0].benefits_Heading);
+          setBenefitsList(servicesArray[0].benfits);
+        }
       }
     };
     onValue(servicesRef, onDataChange);
@@ -58,7 +70,7 @@ let IndivisualServices = () => {
           if (data[i].name !== name) {
             relatedServicesData.push(data[i]);
           }
-          if(relatedServicesData.length===2){
+          if (relatedServicesData.length === 2) {
             break;
           }
         }
@@ -90,6 +102,28 @@ let IndivisualServices = () => {
           <p className={styles.serviceHeading}>{service.name}</p>
           <p className={styles.description}>{service.description1}</p>
           <p className={styles.description}>{service.description2}</p>
+          {featuresHeading && (
+            <p className={styles.featuresHeading}>{featuresHeading}</p>
+          )}
+          {featuresList &&
+            featuresList.map((item, index) => {
+              return (
+                <ul className={styles.featuresList} key={index}>
+                  <li className={styles.featuresListItem}>{item}</li>
+                </ul>
+              );
+            })}
+          {benefitsHeading && (
+            <p className={styles.benefitsHeading}>{benefitsHeading}</p>
+          )}
+          {benefitsList &&
+            benefitsList.map((item, index) => {
+              return (
+                <ul className={styles.featuresList} key={index}>
+                  <li className={styles.featuresListItem}>{item}</li>
+                </ul>
+              );
+            })}
           <p className={styles.relatedHeading}>
             Some of the related service(s) are :-
           </p>
