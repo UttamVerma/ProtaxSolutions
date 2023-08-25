@@ -6,7 +6,7 @@
   position: fixed;
   z-index: 50;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.995);
+  background-color: rgba(0, 0, 0, 0.995)
 }
 
 .afterScroll {
@@ -159,7 +159,7 @@
 
 .quickLinksDiv:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  background-color: rgb(244, 243, 243);
+  background-color: lightyellow;
 }
 
 .quickLinkHeading {
@@ -389,7 +389,7 @@
 
   .hambergerMenu:hover {
     cursor: pointer;
-    color: lightyellow;
+    color: yellow;
   }
 }
 
