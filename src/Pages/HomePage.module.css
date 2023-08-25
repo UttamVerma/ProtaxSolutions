@@ -48,7 +48,7 @@
     letter-spacing: 1px;
     font-size: 20px;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 600;
     color: #A16207; 
     width: 35%;
 }
@@ -341,7 +341,7 @@
         letter-spacing: 1px;
         font-size: 20px;
         margin-bottom: 10px;
-        font-weight: 500;
+        font-weight: 600;
         color: #A16207; 
         width: 45%;
     }
@@ -394,7 +394,7 @@
         letter-spacing: 1px;
         font-size: 20px;
         margin-bottom: 10px;
-        font-weight: 500;
+        font-weight: 600;
         color: #A16207; 
         width: 45%;
     }
@@ -509,7 +509,6 @@
     .serviceHeading{
         margin-top: 30px;
         font-size: 30px;
-        color: rgb(0, 150, 136);
         font-weight: 500;
         letter-spacing: 1px;
     }
@@ -519,7 +518,6 @@
         font-size: 25px;
         letter-spacing: 1px;
         font-weight: 500;
-        color: #BE185D;
     }
     
     .servicesDiv{
@@ -629,7 +627,7 @@
         letter-spacing: 1px;
         font-size: 20px;
         margin-bottom: 10px;
-        font-weight: 500;
+        font-weight: 600;
         color: #A16207;  
         width: 60%;
     }
@@ -745,7 +743,6 @@
     .serviceHeading{
         margin-top: 30px;
         font-size: 30px;
-        color: rgb(0, 150, 136);
         font-weight: 500;
         letter-spacing: 1px;
     }
@@ -755,7 +752,6 @@
         font-size: 25px;
         letter-spacing: 1px;
         font-weight: 500;
-        color: #BE185D;
     }
     
     .servicesDiv{
@@ -865,7 +861,7 @@
         letter-spacing: 1px;
         font-size: 20px;
         margin-bottom: 10px;
-        font-weight: 500;
+        font-weight: 600;
         color: #A16207; 
         width: 70%;
     }
@@ -984,7 +980,6 @@
     .serviceHeading{
         margin-top: 30px;
         font-size: 30px;
-        color: rgb(0, 150, 136);
         font-weight: 500;
         letter-spacing: 1px;
     }
@@ -994,7 +989,6 @@
         font-size: 25px;
         letter-spacing: 1px;
         font-weight: 500;
-        color: #BE185D;
     }
     
     .servicesDiv{
@@ -1104,7 +1098,7 @@
         letter-spacing: 1px;
         font-size: 20px;
         margin-bottom: 10px;
-        font-weight: 500;
+        font-weight: 600;
         color: #A16207;  
         width: 70%;
     }
@@ -1223,7 +1217,6 @@
     .serviceHeading{
         margin-top: 30px;
         font-size: 30px;
-        color: rgb(0, 150, 136);
         font-weight: 500;
         letter-spacing: 1px;
     }
@@ -1233,7 +1226,6 @@
         font-size: 20px;
         letter-spacing: 1px;
         font-weight: 500;
-        color: #BE185D;
     }
     
     .servicesDiv{
@@ -1343,7 +1335,7 @@
         letter-spacing: 1px;
         font-size: 15px;
         margin-bottom: 10px;
-        font-weight: 500;
+        font-weight: 600;
         color: #A16207; 
         width: 70%;
     }
@@ -1462,7 +1454,6 @@
     .serviceHeading{
         margin-top: 30px;
         font-size: 25px;
-        color: rgb(0, 150, 136);
         font-weight: 500;
         letter-spacing: 1px;
     }
@@ -1472,7 +1463,6 @@
         font-size: 18px;
         letter-spacing: 1px;
         font-weight: 500;
-        color: #BE185D;
     }
     
     .servicesDiv{
@@ -1582,7 +1572,7 @@
         letter-spacing: 1px;
         font-size: 15px;
         margin-bottom: 10px;
-        font-weight: 500;
+        font-weight: 600;
         color: #A16207; 
         width: 70%;
     }
@@ -1611,7 +1601,7 @@
         margin: auto;
         margin-top: 20px;
         letter-spacing: 1px;
-        font-size: 18px;
+        font-size: 15px;
         text-align: justify;
         color: rgb(66, 65, 65);
     }
@@ -1638,17 +1628,20 @@
     }
     
     .goalsDescription{
-        margin-top: -20px;
         font-size: 18px;
         letter-spacing: 1px;
         font-weight: 500;
+        width: 80%;
+        margin: auto;
+        margin-top: -20px;
+        margin-bottom: 20px;
     }
     
     .goalsList{
         width: 80%;
         margin: auto;
         text-align: justify;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 27px;
     }
     
@@ -1701,17 +1694,18 @@
     .serviceHeading{
         margin-top: 30px;
         font-size: 25px;
-        color: rgb(0, 150, 136);
         font-weight: 500;
         letter-spacing: 1px;
     }
     
     .servicesDescription{
+        margin: auto;
+        margin-bottom: 20px;
+        width: 80%;
         margin-top: -20px;
         font-size: 18px;
         letter-spacing: 1px;
         font-weight: 500;
-        color: #BE185D;
     }
     
     .servicesDiv{
@@ -1821,7 +1815,7 @@
         letter-spacing: 1px;
         font-size: 15px;
         margin-bottom: 10px;
-        font-weight: 500;
+        font-weight: 600;
         color: #A16207; 
         width: 90%;
     }
@@ -1850,7 +1844,7 @@
         margin: auto;
         margin-top: 20px;
         letter-spacing: 1px;
-        font-size: 16px;
+        font-size: 14px;
         text-align: justify;
         color: rgb(66, 65, 65);
     }
@@ -1887,8 +1881,8 @@
         width: 85%;
         margin: auto;
         text-align: left;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 14px;
+        line-height: 25px;
     }
     
     .goals{
@@ -1940,7 +1934,6 @@
     .serviceHeading{
         margin-top: 30px;
         font-size: 20px;
-        color: rgb(0, 150, 136);
         font-weight: 500;
         letter-spacing: 1px;
     }
@@ -1950,7 +1943,6 @@
         font-size: 16px;
         letter-spacing: 1px;
         font-weight: 500;
-        color: #BE185D;
     }
     
     .servicesDiv{
@@ -2060,7 +2052,7 @@
         letter-spacing: 1px;
         font-size: 13px;
         margin-bottom: 10px;
-        font-weight: 500;
+        font-weight: 600;
         color: #A16207; 
         width: 100%;
     }
@@ -2089,7 +2081,7 @@
         margin: auto;
         margin-top: 20px;
         letter-spacing: 1px;
-        font-size: 16px;
+        font-size: 13px;
         text-align: justify;
         color: rgb(66, 65, 65);
     }
@@ -2126,8 +2118,8 @@
         width: 85%;
         margin: auto;
         text-align: left;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 13px;
+        line-height: 25px;
     }
     
     .goals{
@@ -2179,7 +2171,6 @@
     .serviceHeading{
         margin-top: 30px;
         font-size: 20px;
-        color: rgb(0, 150, 136);
         font-weight: 500;
         letter-spacing: 1px;
     }
@@ -2189,7 +2180,6 @@
         font-size: 16px;
         letter-spacing: 1px;
         font-weight: 500;
-        color: #BE185D;
     }
     
     .servicesDiv{

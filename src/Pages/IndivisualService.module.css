@@ -24,7 +24,7 @@
 }
 
 .serviceHeading {
-  font-size: 25px;
+  font-size: 27px;
   letter-spacing: 1px;
   margin-top: 30px;
   font-weight: 500;
@@ -48,7 +48,7 @@
   letter-spacing: 1px;
   text-align: justify;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -71,7 +71,7 @@
   text-align: justify;
   margin-bottom: 20px;
   margin-top: 30px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -419,7 +419,7 @@
     letter-spacing: 1px;
     text-align: justify;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
   }
 
@@ -442,7 +442,7 @@
     text-align: justify;
     margin-bottom: 20px;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
   }
 
@@ -539,7 +539,7 @@
   }
 
   .serviceHeading {
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: 1px;
     margin-top: 30px;
     font-weight: 500;
@@ -649,7 +649,7 @@
   }
 
   .serviceHeading {
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: 1px;
     margin-top: 30px;
     font-weight: 500;
@@ -673,7 +673,7 @@
     letter-spacing: 1px;
     text-align: justify;
     margin-bottom: 20px;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 500;
   }
 
@@ -696,7 +696,7 @@
     text-align: justify;
     margin-bottom: 20px;
     margin-top: 30px;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 500;
   }
 
@@ -717,6 +717,7 @@
     grid-template-columns: repeat(1, 100%);
     gap: 5%;
     margin-top: 30px;
+    margin-bottom: 60px;
   }
 
   .relatedServiceCard {
@@ -750,7 +751,7 @@
   }
 
   .acceptanceDiv {
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-top: 20px;
     box-sizing: border-box;
@@ -794,7 +795,7 @@
   }
 
   .serviceHeading {
-    font-size: 17px;
+    font-size: 22px;
     letter-spacing: 1px;
     margin-top: 30px;
     font-weight: 500;
@@ -829,6 +830,7 @@
     grid-template-columns: repeat(1, 100%);
     gap: 5%;
     margin-top: 30px;
+    margin-bottom: 60px;
   }
 
   .relatedServiceCard {
@@ -862,7 +864,7 @@
   }
 
   .acceptanceDiv {
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-top: 20px;
     box-sizing: border-box;
