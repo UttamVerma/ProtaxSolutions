@@ -159,7 +159,7 @@
 
 .quickLinksDiv:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  background-color: rgb(244, 243, 243);
+  background-color: lightyellow;
 }
 
 .quickLinkHeading {
