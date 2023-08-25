@@ -4,7 +4,7 @@
     width: 100%;
     object-fit: fill;
     box-sizing: border-box;
-    padding-top: 70px;
+    padding-top: 90px;
 }
 .headingDiv{
     text-align: left;
@@ -13,6 +13,7 @@
 }
 .aboutHeading{
     color: rgb(51, 165, 203);
+    
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 40px;
@@ -30,6 +31,7 @@
     letter-spacing: 1.5px;
     font-weight: 500;
     color: rgb(51, 165, 203);
+    
 }
 
 .introText{
@@ -59,7 +61,7 @@
         width: 100%;
         object-fit: fill;
         box-sizing: border-box;
-        padding-top: 70px;
+        padding-top: 90px;
     }
     .headingDiv{
         text-align: left;
@@ -113,7 +115,7 @@
         width: 100%;
         object-fit: fill;
         box-sizing: border-box;
-        padding-top: 70px;
+        padding-top: 90px;
     }
     .headingDiv{
         text-align: left;
@@ -167,7 +169,7 @@
         width: 100%;
         object-fit: fill;
         box-sizing: border-box;
-        padding-top: 50px;
+        padding-top: 70px;
     }
     .headingDiv{
         text-align: left;
@@ -221,7 +223,7 @@
         width: 100%;
         object-fit: fill;
         box-sizing: border-box;
-        padding-top: 50px;
+        padding-top: 70px;
     }
     .headingDiv{
         text-align: left;
@@ -275,7 +277,7 @@
         width: 100%;
         object-fit: fill;
         box-sizing: border-box;
-        padding-top: 50px;
+        padding-top: 70px;
     }
     .headingDiv{
         text-align: left;

@@ -57,7 +57,7 @@ let Navbar = () => {
         <div className={styles.optionsDiv}>
           <p
             className={styles.options}
-            style={scrolled ? { fontWeight: 400 } : { fontWeight: 500 }}
+            style={scrolled ? { fontWeight: 400 } : { fontWeight: 400 }}
             onClick={() => {
               navigate("/about");
             }}
@@ -66,7 +66,7 @@ let Navbar = () => {
           </p>
           <p
             className={styles.options}
-            style={scrolled ? { fontWeight: 400 } : { fontWeight: 500 }}
+            style={scrolled ? { fontWeight: 400 } : { fontWeight: 400 }}
             onClick={() => {
               navigate("/contact");
             }}
@@ -75,7 +75,7 @@ let Navbar = () => {
           </p>
           <p
             className={styles.options}
-            style={scrolled ? { fontWeight: 400 } : { fontWeight: 500 }}
+            style={scrolled ? { fontWeight: 400 } : { fontWeight: 400 }}
             onClick={() => {
               navigate("/services");
             }}

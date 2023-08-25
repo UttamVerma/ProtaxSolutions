@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import logo from "../Components/Assets/logoprotaxfinal.png";
+import logo from "../Components/Assets/protax-solutions-logo-cropped.jpg";
 import facebook from "../Components/Assets/facebook.png";
 import instagram from "../Components/Assets/instagram.png";
 import whatsapp from "../Components/Assets/whatsapp.png";
@@ -154,7 +154,7 @@ let Footer = () => {
         <p className={styles.developerInfoText}>
           Crafted with care by{" "}
           <span className={styles.nameText}>
-            <a href="https://api.whatsapp.com/send/?phone=9896125909&text=Hello&type=phone_number&app_absent=0" target="_blank">Uttam Verma & </a>
+            <a href="https://api.whatsapp.com/send/?phone=9896125909&text=Hello&type=phone_number&app_absent=0" target="_blank">Uttam Verma</a> & {" "}
             <span className={styles.nameText}>
               <a href="mailto:sakshamverma798@gmail.com" target="_blank">Saksham Verma</a>
             </span>

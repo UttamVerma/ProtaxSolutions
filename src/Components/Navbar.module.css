@@ -6,7 +6,7 @@
   position: fixed;
   z-index: 50;
   top: 0;
-  /* background-color: black; */
+  background-color: rgba(0, 0, 0, 0.995);
 }
 
 .afterScroll {
@@ -42,11 +42,11 @@
 .options {
   font-size: 17px;
   letter-spacing: 1px;
-  color: black;
+  color: white;
   transition: color 1s ease, text-decoration 3s ease;
   text-decoration: none;
   position: relative;
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 .options::after {
@@ -61,7 +61,8 @@
 }
 
 .options:hover {
-  color: rgb(0, 206, 209);
+  /* color: rgb(0, 206, 209); */
+  color: yellow;
   cursor: pointer;
 }
 
@@ -94,7 +95,7 @@
   margin: 0;
   width: 65%;
   height: 100%;
-  background-image: linear-gradient(white, lightblue);
+  background-image: linear-gradient(gray,white);
   position: absolute;
   right: 0;
   animation: slideIn 1s forwards;
@@ -111,11 +112,11 @@
 
 .topSection {
   height: 40px;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to left,
-    rgb(5, 201, 5),
+    black(5, 201, 5),
     rgb(101, 212, 249)
-  );
+  ); */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -126,6 +127,12 @@
   padding-right: 9%;
   font-weight: 500;
   font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.topSectionHeading{
+  text-decoration: underline;
 }
 
 .closeSymbol {
@@ -146,7 +153,7 @@
   padding-right: 8%;
   height: 40px;
   font-weight: 500;
-  color: rgb(2, 189, 192);
+  color: yellow;
   margin-bottom: 6px;
 }
 
@@ -162,7 +169,7 @@
 
 .moveSymbol {
   font-size: 24px;
-  color: darkblue;
+  color: white;
 }
 
 @media all and (max-width: 1050px) {
@@ -187,13 +194,13 @@
     position: fixed;
     z-index: 50;
     top: 0;
-    background-color: white;
+    background-color: black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .logoImage {
     width: 240px;
-    height: 50px;
+    height: 70px;
   }
 
   .optionsDiv {
@@ -206,7 +213,7 @@
   .options {
     font-size: 17px;
     letter-spacing: 1px;
-    color: black;
+    color: white;
     transition: color 1s ease, text-decoration 3s ease;
     text-decoration: none;
     position: relative;
@@ -225,7 +232,8 @@
   }
 
   .options:hover {
-    color: rgb(0, 206, 209);
+    /* color: rgb(0, 206, 209); */
+    color: yellow;
     cursor: pointer;
   }
 
@@ -256,13 +264,13 @@
     position: fixed;
     z-index: 50;
     top: 0;
-    background-color: white;
+    background-color: black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .logoImage {
     width: 230px;
-    height: 50px;
+    height: 70px;
   }
 
   .optionsDiv {
@@ -275,7 +283,7 @@
   .options {
     font-size: 17px;
     letter-spacing: 1px;
-    color: black;
+    color: white;
     transition: color 1s ease, text-decoration 3s ease;
     text-decoration: none;
     position: relative;
@@ -294,7 +302,8 @@
   }
 
   .options:hover {
-    color: rgb(0, 206, 209);
+    /* color: rgb(0, 206, 209); */
+    color: yellow;
     cursor: pointer;
   }
 
@@ -325,13 +334,13 @@
     position: fixed;
     z-index: 50;
     top: 0;
-    background-color: white;
+    background-color: black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .logoImage {
     width: 220px;
-    height: 50px;
+    height: 70px;
   }
 
   .optionsDiv {
@@ -350,7 +359,7 @@
     display: none;
     font-size: 17px;
     letter-spacing: 1px;
-    color: black;
+    color: white;
     transition: color 1s ease, text-decoration 3s ease;
     text-decoration: none;
   }
@@ -368,16 +377,19 @@
 
   .options:hover {
     cursor: pointer;
-    color: rgb(0, 206, 209);
+    /* color: rgb(0, 206, 209); */
+    color: yellow;
   }
 
   .hambergerMenu {
     display: block;
     font-size: 16px;
+    color: white;
   }
 
   .hambergerMenu:hover {
     cursor: pointer;
+    color: lightyellow;
   }
 }
 
@@ -403,13 +415,13 @@
     position: fixed;
     z-index: 50;
     top: 0;
-    background-color: white;
+    background-color: black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .logoImage {
     width: 200px;
-    height: 45px;
+    height: 65px;
   }
 
   .optionsDiv {
@@ -425,7 +437,7 @@
     display: none;
     font-size: 17px;
     letter-spacing: 1px;
-    color: black;
+    color: white;
     transition: color 1s ease, text-decoration 3s ease;
     text-decoration: none;
     font-weight: 500;
@@ -444,7 +456,8 @@
 
   .options:hover {
     cursor: pointer;
-    color: rgb(0, 206, 209);
+    /* color: rgb(0, 206, 209); */
+    color: yellow;
   }
 
   .hambergerMenu {
@@ -479,13 +492,13 @@
     position: fixed;
     z-index: 50;
     top: 0;
-    background-color: white;
+    background-color: black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .logoImage {
     width: 200px;
-    height: 44px;
+    height: 60px;
   }
 
   .optionsDiv {
@@ -503,6 +516,7 @@
 
   .options:hover {
     cursor: pointer;
+    color: yellow;
   }
 
   .hambergerMenu {
