@@ -10,6 +10,13 @@ import safe from "../Components/Assets/shield.png";
 import qualified from "../Components/Assets/badge.png";
 import { useNavigate } from "react-router-dom";
 import backgroundImageForSmallScreen from "../Components/Assets/homepageImageForSmallScreenSizes.png";
+let truncateWords = (text, maxWords) => {
+  let words = text.split(" ");
+  if (words.length > maxWords) {
+    return words.slice(0, maxWords).join(" ") + " " + "...";
+  }
+  return text;
+};
 let HomePage = () => {
   let [windowWidth, setWindowWidth] = useState(window.innerWidth);
   let [isLoading, setIsLoading] = useState(true);
@@ -100,7 +107,7 @@ let HomePage = () => {
           {/* <p className={styles.backgroundHeading}>
             Navigating Prosperity : Your Financial Journey Begins here
           </p> */}
-          <p className={styles.backgroundDescription}>Trust Upon Us</p>
+          {/* <p className={styles.backgroundDescription}>Trust Upon Us</p> */}
           <p className={styles.backgroundHeading}>Explore Our Top Services</p>
           <ul className={styles.listParent}>
             <li
@@ -211,8 +218,17 @@ let HomePage = () => {
               className={styles.servicesCard}
               onClick={() => navigate(`/service/${item.name}`)}
             >
-              <img src={item.img1} className={styles.serviceImage} />
+              {/* <img src={item.img1} className={styles.serviceImage} /> */}
               <p className={styles.serviceName}>{item.name}</p>
+              <p className={styles.serviceDesc}>
+                {truncateWords(item.description1, 25)}{" "}
+                <span
+                  className={styles.viewMore}
+                  onClick={() => navigate(`/service/${item.name}`)}
+                >
+                  View More
+                </span>
+              </p>
             </div>
           );
         })}

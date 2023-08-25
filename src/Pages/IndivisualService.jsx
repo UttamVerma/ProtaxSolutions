@@ -8,6 +8,14 @@ import { initializeApp } from "firebase/app";
 import loadingImg from "../Components/Assets/loadingGif.gif";
 import Footer from "../Components/Footer";
 
+let truncateWords = (text, maxWords) => {
+  let words = text.split(" ");
+  if (words.length > maxWords) {
+    return words.slice(0, maxWords).join(" ") + " " + "...";
+  }
+  return text;
+};
+
 let IndivisualServices = () => {
   useEffect(() => {
     window.scroll({ top: 0, behavior: "smooth" });
@@ -87,7 +95,7 @@ let IndivisualServices = () => {
       <Navbar />
       {!loading ? (
         <div className={styles.main}>
-          <div className={styles.imageDiv}>
+          {/* <div className={styles.imageDiv}>
             <img
               className={styles.serviceImage}
               src={service.img1}
@@ -98,7 +106,7 @@ let IndivisualServices = () => {
               src={service.img2}
               alt={`${service.name}`}
             />
-          </div>
+          </div> */}
           <p className={styles.serviceHeading}>{service.name}</p>
           <p className={styles.description}>{service.description1}</p>
           <p className={styles.description}>{service.description2}</p>
@@ -135,9 +143,18 @@ let IndivisualServices = () => {
                   key={item.id}
                   onClick={() => navigate(`/service/related/${item.name}`)}
                 >
-                  <img className={styles.relatedServiceImage} src={item.img1} />
+                  {/* <img className={styles.relatedServiceImage} src={item.img1} /> */}
                   <p className={styles.relatedServiceCardHeading}>
                     {item.name} {"->"}
+                  </p>
+                  <p className={styles.relatedServiceDesc}>
+                    {truncateWords(item.description1, 25)}{" "}
+                    <span
+                      className={styles.viewMore}
+                      onClick={() => navigate(`/service/related/${item.name}`)}
+                    >
+                      View More
+                    </span>
                   </p>
                 </div>
               );

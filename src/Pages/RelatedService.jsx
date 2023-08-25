@@ -7,6 +7,14 @@ import { getDatabase, ref, onValue, off } from "firebase/database";
 import { initializeApp } from "firebase/app";
 import { useNavigate, useParams } from "react-router-dom";
 import loadingImg from "../Components/Assets/loadingGif.gif";
+let truncateWords = (text, maxWords) => {
+  let words = text.split(" ");
+  if (words.length > maxWords) {
+    return words.slice(0, maxWords).join(" ") + " " + "...";
+  }
+  return text;
+};
+
 let RelatedService = () => {
   useEffect(() => {
     window.scroll({ top: 0, behavior: "smooth" });
@@ -15,6 +23,10 @@ let RelatedService = () => {
   let [relatedServices, setRelatedServices] = useState([]);
   let [loading, setLoading] = useState(true);
   let navigate=useNavigate();
+  let [featuresHeading, setFeaturesHeading] = useState("");
+  let [featuresList, setFeaturesList] = useState([]);
+  let [benefitsHeading, setBenefitsHeading] = useState("");
+  let [benefitsList, setBenefitsList] = useState([]);
   let {name} =useParams();
   let firebaseConfig = {
     apiKey: "AIzaSyAy3b_KQ9SuERsygoLmEJvMZtBYk7TMbuE",
@@ -37,6 +49,14 @@ let RelatedService = () => {
         });
         setService(servicesArray[0]);
         setLoading(false);
+        if (servicesArray[0]?.features_Heading) {
+          setFeaturesHeading(servicesArray[0].features_Heading);
+          setFeaturesList(servicesArray[0].features);
+        }
+        if (servicesArray[0]?.benefits_Heading) {
+          setBenefitsHeading(servicesArray[0].benefits_Heading);
+          setBenefitsList(servicesArray[0].benfits);
+        }
       }
     };
     onValue(servicesRef, onDataChange);
@@ -74,7 +94,7 @@ let RelatedService = () => {
       <Navbar />
       {!loading ? (
         <div className={styles.main}>
-          <div className={styles.imageDiv}>
+          {/* <div className={styles.imageDiv}>
             <img
               className={styles.serviceImage}
               src={service.img1}
@@ -85,10 +105,32 @@ let RelatedService = () => {
               src={service.img2}
               alt={`${service.name}`}
             />
-          </div>
+          </div> */}
           <p className={styles.serviceHeading}>{service.name}</p>
           <p className={styles.description}>{service.description1}</p>
           <p className={styles.description}>{service.description2}</p>
+          {featuresHeading && (
+            <p className={styles.featuresHeading}>{featuresHeading}</p>
+          )}
+          {featuresList &&
+            featuresList.map((item, index) => {
+              return (
+                <ul className={styles.featuresList} key={index}>
+                  <li className={styles.featuresListItem}>{item}</li>
+                </ul>
+              );
+            })}
+          {benefitsHeading && (
+            <p className={styles.benefitsHeading}>{benefitsHeading}</p>
+          )}
+          {benefitsList &&
+            benefitsList.map((item, index) => {
+              return (
+                <ul className={styles.featuresList} key={index}>
+                  <li className={styles.featuresListItem}>{item}</li>
+                </ul>
+              );
+            })}
           <p className={styles.relatedHeading}>
             Some of the related service(s) are :-
           </p>
@@ -100,9 +142,18 @@ let RelatedService = () => {
                   key={item.id}
                   onClick={() => navigate(`/service/${item.name}`)}
                 >
-                  <img className={styles.relatedServiceImage} src={item.img1} />
+                  {/* <img className={styles.relatedServiceImage} src={item.img1} /> */}
                   <p className={styles.relatedServiceCardHeading}>
                     {item.name} {"->"}
+                  </p>
+                  <p className={styles.relatedServiceDesc}>
+                    {truncateWords(item.description1, 25)}{" "}
+                    <span
+                      className={styles.viewMore}
+                      onClick={() => navigate(`/service/${item.name}`)}
+                    >
+                      View More
+                    </span>
                   </p>
                 </div>
               );
