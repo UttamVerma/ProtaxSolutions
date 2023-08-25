@@ -21,7 +21,7 @@ let AboutUs = () => {
           {/* <p className={styles.headingPara}>Trust Upon Us</p> */}
         </div>
       </div>
-      <p className={styles.introHeading}>ProTax Solutions</p>
+      <p className={styles.introHeading}>Protax Solutions</p>
       <p className={styles.introText}>
         Welcome to our esteemed firm of seasoned Tax Professionals, Chartered
         Accountants, Company Secretary and Advocates dedicated to providing an
@@ -33,7 +33,7 @@ let AboutUs = () => {
       <p className={styles.introText2}>
         Armed with our proficiency in untangling intricate problems and our
         proactive approach to client engagement, we have established ourselves
-        as the ultimate destination – a one-stop-shop boasting a multitude of
+        as the ultimate destination – a one stop shop boasting a multitude of
         professional service offerings, all conveniently located under our roof.
       </p>
       <Footer />
