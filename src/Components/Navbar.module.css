@@ -6,7 +6,7 @@
   position: fixed;
   z-index: 50;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.995);
+  background-color: rgba(0, 0, 0, 0.995)
 }
 
 .afterScroll {
