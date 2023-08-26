@@ -143,7 +143,7 @@ let IndivisualServices = () => {
                   key={item.id}
                   onClick={() => navigate(`/service/related/${item.name}`)}
                 >
-                  {/* <img className={styles.relatedServiceImage} src={item.img1} /> */}
+                  <img className={styles.relatedServiceImage} src={item.img1} />
                   <p className={styles.relatedServiceCardHeading}>
                     {item.name} {"->"}
                   </p>

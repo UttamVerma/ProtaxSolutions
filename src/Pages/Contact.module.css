@@ -12,7 +12,7 @@
 .loadingImg{
     height: 110px;
     position: fixed;
-    top: 195px;
+    top: 235px;
     left: 45%;
 }
 
@@ -54,6 +54,28 @@
     letter-spacing: 1px;
     color: rgb(40, 53, 147);
     font-weight: 500;
+}
+
+.sendQueryDiv{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+.queryText{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.sendText{
+    color: blue;
+}
+
+.sendText:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 @media all and (max-width:1170px){
@@ -358,7 +380,7 @@
         height: 110px;
         position: fixed;
         top: 195px;
-        left: 35%;
+        left: 37%;
     }
 }
 
