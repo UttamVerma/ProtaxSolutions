@@ -28,7 +28,7 @@
   letter-spacing: 1px;
   margin-top: 30px;
   font-weight: 500;
-  color: #be123c;
+  color: #cf7c06;
 }
 
 .description {
@@ -89,7 +89,7 @@
   width: 70%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 34%);
+  grid-template-columns: repeat(2, 39%);
   gap: 3%;
   margin-top: 30px;
 }
@@ -100,7 +100,7 @@
   /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
   box-sizing: border-box;
   padding-top: 5%;
-  padding-bottom: 15%;
+  padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
   text-align: left;
@@ -114,13 +114,13 @@
 
 .relatedServiceImage {
   width: 100%;
-  height: 80%;
+  height: 300px;
   border-radius: 10px;
 }
 
 .relatedServiceCardHeading {
   font-size: 20px;
-  color: #be123c;
+  color: rgb(183, 121, 5);
   letter-spacing: 1px;
   /* margin: auto; */
 }
@@ -179,117 +179,6 @@
     letter-spacing: 1px;
     margin-top: 30px;
     font-weight: 500;
-    color: #be123c;
-  }
-
-  .description {
-    width: 70%;
-    letter-spacing: 1px;
-    line-height: 28px;
-    text-align: justify;
-    margin: auto;
-    font-size: 18px;
-    margin-bottom: 40px;
-    color: rgb(47, 79, 79);
-  }
-
-  .relatedHeading {
-    width: 70%;
-    text-align: left;
-    margin: auto;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    margin-top: 20px;
-  }
-
-  .relatedServicesDiv {
-    width: 70%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 35%);
-    gap: 5%;
-    margin-top: 30px;
-  }
-
-  .relatedServiceCard {
-    /* height: 250px; */
-    border-radius: 10px;
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
-    box-sizing: border-box;
-    padding-top: 5%;
-    padding-bottom: 15%;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: left;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  }
-
-  .relatedServiceCard:hover {
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-
-  .relatedServiceImage {
-    width: 100%;
-    height: 70%;
-    border-radius: 10px;
-  }
-
-  .relatedServiceCardHeading {
-    font-size: 17px;
-    color: #be123c;
-    letter-spacing: 1px;
-  }
-
-  .acceptanceDiv {
-    width: 70%;
-    margin: auto;
-    margin-top: 30px;
-    box-sizing: border-box;
-    padding: 5px;
-    border: 1px solid coral;
-    border-radius: 10px;
-  }
-
-  .acceptanceText {
-    letter-spacing: 1px;
-    color: rgb(64, 3, 3);
-  }
-}
-
-@media all and (max-width: 850px) {
-  .main {
-    width: 100%;
-    margin-top: 90px;
-  }
-
-  .imageDiv {
-    height: 300px;
-    width: 70%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 48%);
-    justify-content: space-between;
-  }
-
-  .serviceImage {
-    height: 97%;
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .loadingGif {
-    margin-top: 10%;
-    height: 150px;
-  }
-
-  .serviceHeading {
-    font-size: 25px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-weight: 500;
-    color: #be123c;
   }
 
   .description {
@@ -328,7 +217,7 @@
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     box-sizing: border-box;
     padding-top: 5%;
-    padding-bottom: 15%;
+    padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
     text-align: left;
@@ -342,13 +231,121 @@
 
   .relatedServiceImage {
     width: 100%;
-    height: 70%;
+    height: 300px;
     border-radius: 10px;
   }
 
   .relatedServiceCardHeading {
     font-size: 17px;
-    color: #be123c;
+    letter-spacing: 1px;
+  }
+
+  .acceptanceDiv {
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid coral;
+    border-radius: 10px;
+  }
+
+  .acceptanceText {
+    letter-spacing: 1px;
+    color: rgb(64, 3, 3);
+  }
+}
+
+@media all and (max-width: 850px) {
+  .main {
+    width: 100%;
+    margin-top: 90px;
+  }
+
+  .imageDiv {
+    height: 300px;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: space-between;
+  }
+
+  .serviceImage {
+    height: 97%;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .loadingGif {
+    margin-top: 10%;
+    height: 150px;
+  }
+
+  .serviceHeading {
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-weight: 500;
+  }
+
+  .description {
+    width: 70%;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-align: justify;
+    margin: auto;
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: rgb(47, 79, 79);
+  }
+
+  .relatedHeading {
+    width: 70%;
+    text-align: left;
+    margin: auto;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+
+  .relatedServicesDiv {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 5%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .relatedServiceCard {
+    /* height: 250px; */
+    border-radius: 10px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-sizing: border-box;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  .relatedServiceCard:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .relatedServiceImage {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .relatedServiceCardHeading {
+    font-size: 17px;
     letter-spacing: 1px;
   }
 
@@ -399,7 +396,6 @@
     letter-spacing: 1px;
     margin-top: 30px;
     font-weight: 500;
-    color: #be123c;
   }
 
   .description {
@@ -463,7 +459,7 @@
     grid-template-columns: repeat(1, 100%);
     gap: 5%;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 
   .relatedServiceCard {
@@ -472,7 +468,7 @@
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     box-sizing: border-box;
     padding-top: 5%;
-    padding-bottom: 15%;
+    padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
     text-align: left;
@@ -486,13 +482,12 @@
 
   .relatedServiceImage {
     width: 100%;
-    height: 70%;
+    height: 300px;
     border-radius: 10px;
   }
 
   .relatedServiceCardHeading {
     font-size: 16px;
-    color: #be123c;
     letter-spacing: 1px;
   }
 
@@ -543,7 +538,6 @@
     letter-spacing: 1px;
     margin-top: 30px;
     font-weight: 500;
-    color: #be123c;
   }
 
   .description {
@@ -574,7 +568,7 @@
     grid-template-columns: repeat(1, 100%);
     gap: 5%;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 
   .relatedServiceCard {
@@ -583,7 +577,7 @@
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     box-sizing: border-box;
     padding-top: 5%;
-    padding-bottom: 15%;
+    padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
     text-align: left;
@@ -597,13 +591,12 @@
 
   .relatedServiceImage {
     width: 100%;
-    height: 70%;
+    height: 250px;
     border-radius: 10px;
   }
 
   .relatedServiceCardHeading {
     font-size: 15px;
-    color: #be123c;
     letter-spacing: 1px;
   }
 
@@ -653,7 +646,6 @@
     letter-spacing: 1px;
     margin-top: 30px;
     font-weight: 500;
-    color: #be123c;
   }
 
   .description {
@@ -726,7 +718,7 @@
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     box-sizing: border-box;
     padding-top: 5%;
-    padding-bottom: 15%;
+    padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
     text-align: left;
@@ -740,13 +732,12 @@
 
   .relatedServiceImage {
     width: 100%;
-    height: 75%;
+    height: 200px;
     border-radius: 10px;
   }
 
   .relatedServiceCardHeading {
     font-size: 15px;
-    color: #be123c;
     letter-spacing: 1px;
   }
 
@@ -799,7 +790,6 @@
     letter-spacing: 1px;
     margin-top: 30px;
     font-weight: 500;
-    color: #be123c;
   }
 
   .description {
@@ -839,7 +829,7 @@
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     box-sizing: border-box;
     padding-top: 5%;
-    padding-bottom: 15%;
+    padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
     text-align: left;
@@ -853,13 +843,12 @@
 
   .relatedServiceImage {
     width: 100%;
-    height: 75%;
+    height: 200px;
     border-radius: 10px;
   }
 
   .relatedServiceCardHeading {
     font-size: 15px;
-    color: #be123c;
     letter-spacing: 1px;
   }
 

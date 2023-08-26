@@ -74,14 +74,14 @@ let Services = () => {
                   key={item.id}
                   onClick={() => navigate(`/service/${item.name}`)}
                 >
-                  {/* <img
+                  <img
                     src={item.img1}
                     alt={`${item.name} image`}
                     className={styles.serviceImage}
-                  /> */}
+                  />
                   <p className={styles.serviceName}>{item.name}</p>
                   <p className={styles.serviceDesc}>
-                    {truncateWords(item.description1, 35)}{" "}
+                    {truncateWords(item.description1, 20)}{" "}
                     <span
                       className={styles.viewMore}
                       onClick={() => navigate(`/service/${item.name}`)}

@@ -35,14 +35,13 @@ let Navbar = () => {
     setShowHamburgerDiv(false);
     navigate("/services");
   };
-  useEffect(()=>{
-    if(showHamburgerDiv){
-      document.body.style.overflow="hidden";
+  useEffect(() => {
+    if (showHamburgerDiv) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
     }
-    else{
-      document.body.style.overflow="auto";
-    }
-  },[showHamburgerDiv]);
+  }, [showHamburgerDiv]);
   return (
     <>
       <div className={!scrolled ? styles.main : styles.afterScroll}>
@@ -68,19 +67,19 @@ let Navbar = () => {
             className={styles.options}
             style={scrolled ? { fontWeight: 400 } : { fontWeight: 400 }}
             onClick={() => {
-              navigate("/contact");
+              navigate("/services");
             }}
           >
-            Contact
+            What we do
           </p>
           <p
             className={styles.options}
             style={scrolled ? { fontWeight: 400 } : { fontWeight: 400 }}
             onClick={() => {
-              navigate("/services");
+              navigate("/contact");
             }}
           >
-            What we do 
+            Contact
           </p>
           <p
             className={styles.hambergerMenu}
@@ -92,10 +91,7 @@ let Navbar = () => {
       </div>
       {showHamburgerDiv ? (
         <div className={styles.hameburgerMenuDiv}>
-          <div
-            className={styles.rightToLeftSliderDiv
-            }
-          >
+          <div className={styles.rightToLeftSliderDiv}>
             <div className={styles.topSection}>
               <p className={styles.topSectionHeading}>Quick Links</p>
               <p
@@ -121,16 +117,16 @@ let Navbar = () => {
             </div>
             <div
               className={styles.quickLinksDiv}
-              onClick={() => navigateContactHandler()}
+              onClick={() => navigateServicesHandler()}
             >
-              <p className={styles.quickLinkHeading}>Contact</p>
+              <p className={styles.quickLinkHeading}>What we do</p>
               <p className={styles.moveSymbol}>→</p>
             </div>
             <div
               className={styles.quickLinksDiv}
-              onClick={() => navigateServicesHandler()}
+              onClick={() => navigateContactHandler()}
             >
-              <p className={styles.quickLinkHeading}>What we do</p>
+              <p className={styles.quickLinkHeading}>Contact</p>
               <p className={styles.moveSymbol}>→</p>
             </div>
           </div>

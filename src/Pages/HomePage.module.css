@@ -194,6 +194,7 @@
     margin-top: 30px;
     /* height: 600px; */
     gap: 2%;
+    margin-bottom: 50px;
 }
 
 .servicesCard{
@@ -526,17 +527,24 @@
         grid-template-columns: repeat(3,32%);
         margin: auto;
         margin-top: 30px;
-        height: 600px;
+        /* height: 600px; */
         gap: 2%;
     }
     
-    .servicesCard{
+    .seeAllServicesDiv{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        height: 70%;
-        text-align: left;
+        /* padding: 10px; */
+        /* height: 200%; */
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-around;
     }
     
     .seeAllServicesDiv{
@@ -760,17 +768,24 @@
         grid-template-columns: repeat(2,49%);
         margin: auto;
         margin-top: 30px;
-        height: 900px;
+        /* height: 900px; */
         justify-content: space-between;
     }
     
-    .servicesCard{
+    .seeAllServicesDiv{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        height: 100%;
-        text-align: left;
+        /* padding: 10px; */
+        /* height: 200%; */
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-around;
     }
     
     .seeAllServicesDiv{
@@ -997,17 +1012,24 @@
         grid-template-columns: repeat(2,49%);
         margin: auto;
         margin-top: 30px;
-        height: 800px;
+        /* height: 800px; */
         justify-content: space-between;
     }
     
-    .servicesCard{
+    .seeAllServicesDiv{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        height: 100%;
-        text-align: left;
+        /* padding: 10px; */
+        /* height: 200%; */
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-around;
     }
     
     .seeAllServicesDiv{
@@ -1234,17 +1256,25 @@
         grid-template-columns: repeat(2,49%);
         margin: auto;
         margin-top: 30px;
-        height: 700px;
+        /* height: 700px; */
         justify-content: space-between;
+        margin-bottom: 80px;
     }
     
-    .servicesCard{
+    .seeAllServicesDiv{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        height: 100%;
-        text-align: left;
+        /* padding: 10px; */
+        /* height: 200%; */
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-around;
     }
     
     .seeAllServicesDiv{
@@ -1471,17 +1501,25 @@
         grid-template-columns: repeat(2,49%);
         margin: auto;
         margin-top: 30px;
-        height: 700px;
+        /* height: 700px; */
         justify-content: space-between;
+        margin-bottom: 70px;
     }
     
-    .servicesCard{
+    .seeAllServicesDiv{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        height: 100%;
-        text-align: left;
+        /* padding: 10px; */
+        /* height: 200%; */
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-around;
     }
     
     .seeAllServicesDiv{
@@ -1714,17 +1752,25 @@
         grid-template-columns: repeat(1,100%);
         margin: auto;
         margin-top: 30px;
-        height: 1000px;
+        /* height: 1000px; */
         justify-content: space-between;
+        margin-bottom: 50px;
     }
     
-    .servicesCard{
+    .seeAllServicesDiv{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        height: 270px;
-        text-align: left;
+        /* padding: 10px; */
+        /* height: 200%; */
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-around;
     }
     
     .seeAllServicesDiv{
@@ -1951,17 +1997,25 @@
         grid-template-columns: repeat(1,100%);
         margin: auto;
         margin-top: 30px;
-        height: 1000px;
+        /* height: 1000px; */
         justify-content: space-between;
+        margin-bottom: 60px;
     }
     
-    .servicesCard{
+    .seeAllServicesDiv{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        height: 270px;
-        text-align: left;
+        /* padding: 10px; */
+        /* height: 200%; */
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-around;
     }
     
     .seeAllServicesDiv{
@@ -2188,17 +2242,25 @@
         grid-template-columns: repeat(1,100%);
         margin: auto;
         margin-top: 30px;
-        height: 1000px;
+        /* height: 1000px; */
         justify-content: space-between;
+        margin-bottom: 50px;
     }
     
-    .servicesCard{
+    .seeAllServicesDiv{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 10px;
-        height: 270px;
-        text-align: left;
+        /* padding: 10px; */
+        /* height: 200%; */
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-around;
     }
     
     .seeAllServicesDiv{
