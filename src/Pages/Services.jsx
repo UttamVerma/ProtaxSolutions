@@ -115,7 +115,7 @@ let Services = () => {
                 <span className={styles.seperateColorText}>
                   pprotaxsolutions@gmail.com
                 </span>{" "}
-                for any financial requirement.
+                for any requirement.
               </p>
               <p className={styles.notSurePhoneText}>
                 You can also visit our office at{" "}
