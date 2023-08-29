@@ -150,6 +150,15 @@
     color: rgb(211, 84, 0);
 }
 
+.responseText{
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.responseText:hover{
+  color: rgb(2, 134, 178);
+}
+
 @media all and (max-width: 1000px) {
   .navbar {
     width: 100%;
@@ -696,5 +705,10 @@
   .lengthText {
     font-size: 16px;
     margin-bottom: 5px;
+  }
+
+  .responseText{
+    font-size: 15px;
+    letter-spacing: 1px;
   }
 }
