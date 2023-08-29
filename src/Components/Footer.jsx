@@ -32,6 +32,10 @@ let Footer = () => {
     navigate("/service/GST Compliances");
     window.scroll({ top: 0, behavior: "smooth" });
   };
+  let incomeTaxHandler = () => {
+    navigate("/service/Income Tax Compliances");
+    window.scroll({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <div className={styles.main}>
@@ -110,6 +114,12 @@ let Footer = () => {
           >
             Financial Consulting
           </p>
+          <p
+            className={styles.popularServices}
+            onClick={() => incomeTaxHandler()}
+          >
+            Income Tax
+          </p>
         </div>
         <div className={styles.parentDiv}>
           <p className={styles.followDivHeading}>Discover More</p>
@@ -127,15 +137,15 @@ let Footer = () => {
           </p>
           <p
             className={styles.popularServices}
-            onClick={() => navigate("/contact")}
-          >
-            Contact
-          </p>
-          <p
-            className={styles.popularServices}
             onClick={() => navigate("/services")}
           >
             What we do
+          </p>
+          <p
+            className={styles.popularServices}
+            onClick={() => navigate("/contact")}
+          >
+            Contact
           </p>
         </div>
         <div className={styles.parentDiv}>
@@ -152,11 +162,19 @@ let Footer = () => {
       </div>
       <div className={styles.developerInfoDiv}>
         <p className={styles.developerInfoText}>
-          Crafted with care by{" "}
+          Designed by{" "}
           <span className={styles.nameText}>
-            <a href="https://api.whatsapp.com/send/?phone=9896125909&text=Hello&type=phone_number&app_absent=0" target="_blank">Uttam Verma</a> & {" "}
+            <a
+              href="https://api.whatsapp.com/send/?phone=9896125909&text=Hello&type=phone_number&app_absent=0"
+              target="_blank"
+            >
+              Uttam Verma
+            </a>{" "}
+            &{" "}
             <span className={styles.nameText}>
-              <a href="mailto:sakshamverma798@gmail.com" target="_blank">Saksham Verma</a>
+              <a href="mailto:sakshamverma798@gmail.com" target="_blank">
+                Saksham Verma
+              </a>
             </span>
           </span>
         </p>

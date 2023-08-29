@@ -1,0 +1,700 @@
+.navbar {
+  width: 100%;
+  background-color: black;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.logoImage {
+  width: 175px;
+  height: 100%;
+}
+
+.logoImage:hover {
+  cursor: pointer;
+}
+
+.optionsDiv {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(5, 130px);
+  gap: 30px;
+}
+
+.option {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 130px;
+}
+
+.option:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid white;
+}
+
+.lengthDigitText{
+    color: rgb(208, 150, 3);
+    font-weight: 600;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  gap: 4% 2%;
+  margin-bottom: 50px;
+}
+
+.resolvedSingleQueryDiv {
+  border: 1px solid green;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.resolvedSingleQueryDiv:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.notResolvedSingleQueryDiv {
+  border: 1px solid #E11D48;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.notResolvedSingleQueryDiv:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.queryTextDiv {
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 18px;
+  display: flex;
+  gap: 30px;
+  align-items: start;
+}
+
+.queryDetailsText {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.queryText {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+}
+
+.reslovedButton {
+  margin: auto;
+  padding: 6px;
+  font-size: 14px;
+  color: rgb(197, 3, 3);
+  background-color: white;
+  border: 1px solid rgb(224, 1, 1);
+  border-radius: 6px;
+}
+
+.reslovedButton:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.emptyDataText {
+  font-size: 30px;
+  color: purple;
+  letter-spacing: 1px;
+  margin: auto;
+  margin-left: 50%;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.lengthDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+.lengthText {
+  font-size: 20px;
+}
+
+.queryFieldsText{
+    color: rgb(211, 84, 0);
+}
+
+@media all and (max-width: 1000px) {
+  .navbar {
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .logoImage {
+    width: 175px;
+    height: 100%;
+  }
+
+  .logoImage:hover {
+    cursor: pointer;
+  }
+
+  .optionsDiv {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 100px);
+    gap: 10px;
+  }
+
+  .option {
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100px;
+  }
+
+  .option:hover {
+    cursor: pointer;
+  }
+
+  .main {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    gap: 4% 2%;
+    margin-bottom: 50px;
+  }
+
+  .resolvedSingleQueryDiv {
+    border: 1px solid green;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .resolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .notResolvedSingleQueryDiv {
+    border: 1px solid red;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .notResolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .queryTextDiv {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .queryFieldsText {
+    font-size: 18px;
+  }
+
+  .queryDetailsText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+
+  .queryText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 70%;
+  }
+
+  .reslovedButton {
+    margin: auto;
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .emptyDataText {
+    font-size: 30px;
+    color: purple;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-left: 50%;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .lengthDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+
+  .lengthText {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 915px) {
+  .navbar {
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .logoImage {
+    width: 175px;
+    height: 100%;
+  }
+
+  .logoImage:hover {
+    cursor: pointer;
+  }
+
+  .optionsDiv {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 100px);
+    gap: 10px;
+  }
+
+  .option {
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100px;
+  }
+
+  .option:hover {
+    cursor: pointer;
+  }
+
+  .main {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    gap: 4% 2%;
+    margin-bottom: 50px;
+  }
+
+  .resolvedSingleQueryDiv {
+    border: 1px solid green;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .resolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .notResolvedSingleQueryDiv {
+    border: 1px solid red;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .notResolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .queryTextDiv {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .queryFieldsText {
+    font-size: 15px;
+  }
+
+  .queryDetailsText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+  .queryText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 70%;
+  }
+
+  .reslovedButton {
+    margin: auto;
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  .emptyDataText {
+    font-size: 30px;
+    color: purple;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-left: 50%;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .lengthDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+
+  .lengthText {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .navbar {
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .logoImage {
+    width: 175px;
+    height: 100%;
+  }
+
+  .logoImage:hover {
+    cursor: pointer;
+  }
+
+  .optionsDiv {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+  }
+
+  .option {
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100px;
+    margin-top: 10px;
+  }
+
+  .option:hover {
+    cursor: pointer;
+  }
+
+  .main {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 4%;
+    margin-bottom: 50px;
+  }
+
+  .resolvedSingleQueryDiv {
+    border: 1px solid green;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .resolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .notResolvedSingleQueryDiv {
+    border: 1px solid red;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .notResolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .queryTextDiv {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .queryFieldsText {
+    font-size: 15px;
+  }
+
+  .queryDetailsText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+  .queryText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 70%;
+  }
+
+  .reslovedButton {
+    margin: auto;
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  .emptyDataText {
+    font-size: 20px;
+    color: purple;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .lengthDiv {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+
+  .lengthText {
+    font-size: 17px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .navbar {
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .logoImage {
+    width: 175px;
+    height: 100%;
+  }
+
+  .logoImage:hover {
+    cursor: pointer;
+  }
+
+  .optionsDiv {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 100px);
+    gap: 10px;
+  }
+
+  .option {
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100px;
+    margin-top: 10px;
+  }
+
+  .option:hover {
+    cursor: pointer;
+  }
+
+  .main {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 4%;
+    margin-bottom: 200px;
+  }
+
+  .resolvedSingleQueryDiv {
+    border: 1px solid green;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .resolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .notResolvedSingleQueryDiv {
+    border: 1px solid red;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .notResolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .queryTextDiv {
+    width: 100%;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .queryFieldsText {
+    font-size: 14px;
+  }
+
+  .queryDetailsText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .queryText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 70%;
+  }
+
+  .reslovedButton {
+    margin: auto;
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .emptyDataText {
+    font-size: 19px;
+    color: purple;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .lengthDiv {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(1, 100%);
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  .lengthText {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
