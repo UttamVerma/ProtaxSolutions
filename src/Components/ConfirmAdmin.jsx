@@ -12,10 +12,10 @@ let ConfirmAdmin = () => {
     e.preventDefault();
     if (
       email.trim() === "pprotaxsolutions@gmail.com" &&
-      password.trim() === "protax_solutions_trust_upon_us_1"
+      password.trim() === "neeraj_@123"
     ) {
       let currentTime = new Date().getTime();
-      let expiryTime = currentTime + 8 * 60 * 60 * 1000;
+      let expiryTime = currentTime + 24 * 60 * 60 * 1000;
       localStorage.setItem(
         "pprotaxSolution",
         JSON.stringify({ authenticated: true, expiry: expiryTime })

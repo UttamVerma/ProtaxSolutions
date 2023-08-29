@@ -183,6 +183,12 @@ let Admin = () => {
                       </p>
                     </div>
                     <div className={styles.queryTextDiv}>
+                      <p className={styles.queryFieldsText}>Mobile Number :</p>
+                      <p className={styles.queryDetailsText}>
+                        {queryData[item].mobile_number}
+                      </p>
+                    </div>
+                    <div className={styles.queryTextDiv}>
                       <p className={styles.queryFieldsText}>Person Email :</p>
                       <p className={styles.queryDetailsText}>
                         {queryData[item].email}
@@ -242,6 +248,15 @@ let Admin = () => {
                           : "Resloved"}
                       </button>
                     </div>
+                    {!queryData[item].resolved_status ? (
+                      <a
+                        className={styles.responseText}
+                        href={`mailto:${queryData[item].email}`}
+                        target="_blank"
+                      >
+                        Respond Now
+                      </a>
+                    ) : null}
                   </div>
                 );
               })

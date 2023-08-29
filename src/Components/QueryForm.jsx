@@ -14,6 +14,7 @@ let QueryForm = () => {
   let { showQueryDiv, setShowQueryDiv } = useContext(AuthContext);
   let [timer, setTimer] = useState(5);
   let [personName, setPersonName] = useState("");
+  let [personMobile, setPersonMobile] = useState("");
   let [personEmail, setPersonEmail] = useState("");
   let [personQuery, setPersonQuery] = useState("");
   let [submitHandler, setSubmitHandler] = useState(false);
@@ -33,12 +34,16 @@ let QueryForm = () => {
       setError(true);
       return;
     }
+    if (personMobile.trim().length < 10) {
+      setError(true);
+      return;
+    }
     if (personEmail.trim().length < 5 || !personEmail.includes("@")) {
       setError(true);
       return;
     }
     let emailParts = personEmail.split("@");
-    if (emailParts.length !== 2 || emailParts[1] !== "gmail.com") {
+    if (emailParts.length !== 2) {
       setError(true);
       return;
     }
@@ -65,6 +70,7 @@ let QueryForm = () => {
           date_DAY_MM_DD_YY: new Date().toDateString(),
           time_HH_MM_SS: new Date().toLocaleTimeString(),
           id: newId,
+          mobile_number: personMobile,
           resolved_status: false,
         }),
       }
@@ -94,6 +100,11 @@ let QueryForm = () => {
       setShowQueryDiv(false);
     }
   }, [timer]);
+  useEffect(()=>{
+    if(submitHandler){
+      setError(false);
+    }
+  },[error,submitHandler]);
   return (
     <>
       <div className={styles.formBackdropDiv}>
@@ -116,6 +127,18 @@ let QueryForm = () => {
               type="text"
               required
               onChange={(e) => setPersonName(e.target.value)}
+            />
+          </div>
+          <div className={styles.queryFieldDiv}>
+            <p className={styles.queryHeading}>Enter your number</p>
+            <input
+              className={styles.queryInput}
+              placeholder="Your Mobile Number"
+              value={personMobile}
+              type="text"
+              required
+              onChange={(e) => setPersonMobile(e.target.value)}
+              maxLength={10}
             />
           </div>
           <div className={styles.queryFieldDiv}>
