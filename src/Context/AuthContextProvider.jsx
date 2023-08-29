@@ -6,11 +6,14 @@ export let AuthContext=createContext()
 let AuthContextProvider=({children})=>{
     let [servicesData,setServicesData]=useState([]);
     let [showQueryDiv,setShowQueryDiv]=useState(false);
+    let [showQueryData, setShowQueryData] = useState(false);
     let dataObj={
         servicesData,
         setServicesData,
         showQueryDiv,
-        setShowQueryDiv
+        setShowQueryDiv,
+        showQueryData,
+        setShowQueryData
     }
     return(
         <AuthContext.Provider value={dataObj}>{children}</ AuthContext.Provider>

@@ -380,7 +380,7 @@
     padding-right: 3%;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(4, 23%);
+    grid-template-columns: repeat(2, 45%);
     padding-top: 3%;
     padding-bottom: 15%;
     letter-spacing: 1.5px;

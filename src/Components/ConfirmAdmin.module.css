@@ -1,0 +1,346 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.formDiv {
+  width: 40%;
+  height: 320px;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  position: fixed;
+  z-index: 50;
+  top: 25%;
+  box-sizing: border-box;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  left: 30%;
+}
+
+.topSectionsDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
+}
+
+.confirmationHeading {
+  color: rgb(185, 134, 3);
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.crossSymbol {
+  color: rgb(185, 134, 3);
+  font-size: 20px;
+}
+
+.crossSymbol:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.inputSection {
+  line-height: 1px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.inputHeading {
+  font-size: 17px;
+}
+
+.input {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.submitButton {
+  margin-bottom: -10px;
+  color: white;
+  border: 1px solid yellowgreen;
+  background-color: yellowgreen;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  background-color: rgb(115, 158, 30);
+}
+
+.errorMessage {
+  margin-top: 15px;
+  color: red;
+}
+
+@media all and (max-width: 800px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+  }
+
+  .formDiv {
+    width: 50%;
+    height: 320px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    position: fixed;
+    z-index: 50;
+    top: 25%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    left: 25%;
+  }
+
+  .topSectionsDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -10px;
+  }
+
+  .confirmationHeading {
+    color: rgb(185, 134, 3);
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .crossSymbol {
+    color: rgb(185, 134, 3);
+    font-size: 20px;
+  }
+
+  .crossSymbol:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  .inputSection {
+    line-height: 1px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .inputHeading {
+    font-size: 17px;
+  }
+
+  .input {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+  }
+
+  .submitButton {
+    margin-bottom: -10px;
+    color: white;
+    border: 1px solid yellowgreen;
+    background-color: yellowgreen;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding: 7px;
+    border-radius: 4px;
+  }
+
+  .errorMessage {
+    margin-top: 15px;
+    color: red;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+  }
+
+  .formDiv {
+    width: 60%;
+    height: 320px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    position: fixed;
+    z-index: 50;
+    top: 20%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    left: 20%;
+  }
+
+  .topSectionsDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -10px;
+  }
+
+  .confirmationHeading {
+    color: rgb(185, 134, 3);
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .crossSymbol {
+    color: rgb(185, 134, 3);
+    font-size: 17px;
+  }
+
+  .crossSymbol:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  .inputSection {
+    line-height: 1px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .inputHeading {
+    font-size: 15px;
+  }
+
+  .input {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+  }
+
+  .input::placeholder {
+    font-size: 12px;
+  }
+
+  .submitButton {
+    margin-bottom: -10px;
+    color: white;
+    border: 1px solid yellowgreen;
+    background-color: yellowgreen;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 11px;
+    padding: 6px;
+    border-radius: 4px;
+  }
+
+  .errorMessage {
+    margin-top: 15px;
+    color: red;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+  }
+
+  .formDiv {
+    width: 75%;
+    height: 320px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    position: fixed;
+    z-index: 50;
+    top: 20%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    left: 12.5%;
+  }
+
+  .topSectionsDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -10px;
+  }
+
+  .confirmationHeading {
+    color: rgb(185, 134, 3);
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .crossSymbol {
+    color: rgb(185, 134, 3);
+    font-size: 17px;
+  }
+
+  .crossSymbol:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  .inputSection {
+    line-height: 1px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .inputHeading {
+    font-size: 15px;
+  }
+
+  .input {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+  }
+
+  .input::placeholder {
+    font-size: 12px;
+  }
+
+  .submitButton {
+    margin-bottom: -10px;
+    color: white;
+    border: 1px solid yellowgreen;
+    background-color: yellowgreen;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 11px;
+    padding: 6px;
+    border-radius: 4px;
+  }
+
+  .errorMessage {
+    margin-top: 15px;
+    color: red;
+  }
+}
