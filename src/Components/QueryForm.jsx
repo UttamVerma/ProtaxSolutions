@@ -22,6 +22,7 @@ let QueryForm = () => {
   let submitHandlerFunction = () => {
     if (
       personName.trim() === "pprotaxsolutions" &&
+      personMobile.trim() == "3333333338" &&
       personEmail.trim() === "pprotaxsolutions@gmail.com" &&
       personQuery.trim() === "protaxsolutions@gmail.com"
     ) {
@@ -100,11 +101,11 @@ let QueryForm = () => {
       setShowQueryDiv(false);
     }
   }, [timer]);
-  useEffect(()=>{
-    if(submitHandler){
+  useEffect(() => {
+    if (submitHandler) {
       setError(false);
     }
-  },[error,submitHandler]);
+  }, [error, submitHandler]);
   return (
     <>
       <div className={styles.formBackdropDiv}>

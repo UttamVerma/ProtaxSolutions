@@ -476,7 +476,7 @@
   .parentDiv {
     margin: auto;
     display: block;
-    height: 280px;
+    height: 300px;
   }
 
   .image {
@@ -636,7 +636,7 @@
 
   .popularServices2 {
     width: 100%;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .developerInfoText {

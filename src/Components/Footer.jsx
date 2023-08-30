@@ -158,6 +158,7 @@ let Footer = () => {
           <p className={styles.popularServices2}>
             Plot No 437, 2nd Floor, Industrial Area Phase 2, Chandigarh, 160002
           </p>
+          <a className={styles.popularServices} href="https://forms.gle/kLYFX5P6c24pf9Fe7" target="_blank">Give us a Feedback</a>
         </div>
       </div>
       <div className={styles.developerInfoDiv}>

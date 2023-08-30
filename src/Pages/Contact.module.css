@@ -14,6 +14,7 @@
     position: fixed;
     top: 235px;
     left: 45%;
+    background-color: transparent;
 }
 
 .loadingText{
@@ -62,10 +63,12 @@
     width: 80%;
     margin: auto;
     text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .queryText{
-    margin-bottom: 30px;
     font-size: 20px;
 }
 
@@ -74,6 +77,20 @@
 }
 
 .sendText:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.feedbackFormTextNotLink{
+    font-size: 20px;
+}
+
+.feedbackFormText{
+    text-decoration: none;
+    color: blue;
+}
+
+.feedbackFormText:hover{
     cursor: pointer;
     text-decoration: underline;
 }
@@ -192,6 +209,7 @@
         grid-template-columns: repeat(2,47%);
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 30px;
     }
     
     .infoChildDiv{
@@ -216,6 +234,17 @@
         letter-spacing: 1px;
         color: rgb(40, 53, 147);
         font-weight: 500;
+    }
+
+    .sendQueryDiv{
+        margin-bottom: 30px;
+        margin-top: 200px;
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -326,6 +355,40 @@
         position: fixed;
         top: 195px;
         left: 40%;
+    }
+
+    .sendQueryDiv{
+        margin-bottom: 30px;
+        margin-top: 200px;
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+
+    .queryText{
+        font-size: 15px;
+    }
+    
+    .sendText{
+        color: blue;
+    }
+    
+    .sendText:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .feedbackFormTextNotLink{
+        font-size: 15px;
+    }
+    
+    .feedbackFormText{
+        text-decoration: none;
+        color: blue;
     }
 }
 
