@@ -54,16 +54,20 @@ let Contact = () => {
         </div>
       </div>
       <div className={styles.sendQueryDiv}>
-          <p className={styles.queryText}>
-            Have a query ?{" "}
-            <span
-              className={styles.sendText}
-              onClick={() => setShowQueryDiv(true)}
-            >
-              Send us right now
-            </span>
-          </p>
-        </div>
+        <p className={styles.queryText}>
+          Have a query ?{" "}
+          <span
+            className={styles.sendText}
+            onClick={() => setShowQueryDiv(true)}
+          >
+            Send us right now
+          </span>
+        </p>
+        <span className={styles.feedbackFormTextNotLink}>
+          Have a suggestion or a feedback ?{" "}
+          <a className={styles.feedbackFormText} href="https://forms.gle/kLYFX5P6c24pf9Fe7" target="_blank">Give us</a>
+        </span>
+      </div>
       <Footer />
       {showQueryDiv ? <QueryForm /> : null}
     </>
