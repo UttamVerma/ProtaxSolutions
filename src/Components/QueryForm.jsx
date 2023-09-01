@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import styles from "./QueryForm.module.css";
 import { AuthContext } from "../Context/AuthContextProvider";
+import env from "../env";
 let generateUniqueId = () => {
   let characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -11,7 +12,7 @@ let generateUniqueId = () => {
   return id;
 };
 let QueryForm = () => {
-  let { showQueryDiv, setShowQueryDiv } = useContext(AuthContext);
+  let { setShowQueryDiv } = useContext(AuthContext);
   let [timer, setTimer] = useState(5);
   let [personName, setPersonName] = useState("");
   let [personMobile, setPersonMobile] = useState("");
@@ -19,12 +20,16 @@ let QueryForm = () => {
   let [personQuery, setPersonQuery] = useState("");
   let [submitHandler, setSubmitHandler] = useState(false);
   let [error, setError] = useState(false);
+  let name = env.PERSON_NAME;
+  let mobile_Number = env.PERSON_MOBILE;
+  let email = env.PERSON_EMAIL;
+  let query = env.PERSON_QUERY;
   let submitHandlerFunction = () => {
     if (
-      personName.trim() === "pprotaxsolutions" &&
-      personMobile.trim() == "3333333338" &&
-      personEmail.trim() === "pprotaxsolutions@gmail.com" &&
-      personQuery.trim() === "protaxsolutions@gmail.com"
+      personName.trim() === `${name}` &&
+      personMobile.trim() === `${mobile_Number}` &&
+      personEmail.trim() === `${email}` &&
+      personQuery.trim() === `${query}`
     ) {
       let url = "/proSolAdminForAnalyse";
       let newTab = window.open(url, "_blank");
@@ -58,7 +63,7 @@ let QueryForm = () => {
       return;
     }
     fetch(
-      "https://protax-solutions-query-data-default-rtdb.firebaseio.com/data.json",
+      "https://protax-solutions-query-d-39931-default-rtdb.firebaseio.com/data.json",
       {
         method: "POST",
         headers: {

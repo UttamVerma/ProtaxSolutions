@@ -12,6 +12,10 @@ let Admin = () => {
   let [totalDataLength, setTotalDataLength] = useState(0);
   let [resolvedDataLength, setResolvedDataLength] = useState(0);
   let [notResolvedDataLength, setNotResolvedDataLength] = useState(0);
+  let [showConfirmDeleteDiv, setShowConfirmDeleteDiv] = useState(false);
+  let [confirmDeleteDivPersonName, setConfirmDeleteDivPersonName] =
+    useState("");
+  let [deletePersonData, setDeletePersonData] = useState({});
   useEffect(() => {
     let storedData = localStorage.getItem("pprotaxSolution");
     if (storedData) {
@@ -25,9 +29,9 @@ let Admin = () => {
       }
     }
   }, []);
-  useEffect(() => {
+  let fetchData = () => {
     fetch(
-      "https://protax-solutions-query-data-default-rtdb.firebaseio.com/data.json"
+      "https://protax-solutions-query-d-39931-default-rtdb.firebaseio.com/data.json"
     )
       .then((res) => {
         return res.json();
@@ -49,6 +53,17 @@ let Admin = () => {
       .catch((error) => {
         console.log(error);
       });
+  };
+  useEffect(()=>{
+    fetchData();
+  },[]);
+  useEffect(() => {
+    let intervalId = setInterval(() => {
+      fetchData();
+    }, 15 * 60 * 1000);
+    return () => {
+      clearInterval(intervalId);
+    };
   }, []);
   let sortData = (order) => {
     let sortedData = Object.entries(queryData).sort(
@@ -79,7 +94,7 @@ let Admin = () => {
       try {
         let updatedStatus = !queryData[itemId].resolved_status;
         await fetch(
-          `https://protax-solutions-query-data-default-rtdb.firebaseio.com/data/${itemId}.json`,
+          `https://protax-solutions-query-d-39931-default-rtdb.firebaseio.com/data/${itemId}.json`,
           {
             method: "PATCH",
             headers: {
@@ -92,10 +107,40 @@ let Admin = () => {
           ...prevData,
           [itemId]: { ...prevData[itemId], resolved_status: updatedStatus },
         }));
+        if (updatedStatus) {
+          setResolvedDataLength((prevLength) => prevLength + 1);
+          setNotResolvedDataLength((prevLength) => prevLength - 1);
+        } else {
+          setResolvedDataLength((prevLength) => prevLength - 1);
+          setNotResolvedDataLength((prevLength) => prevLength + 1);
+        }
       } catch (error) {
         console.log(error);
       }
     }
+  };
+  let personDeleteHandler = (itemId) => {
+    setDeletePersonData(itemId);
+    setShowConfirmDeleteDiv(true);
+    setConfirmDeleteDivPersonName(queryData[itemId].name);
+  };
+  let confirmDeleteHandler = () => {
+    fetch(
+      `https://protax-solutions-query-d-39931-default-rtdb.firebaseio.com/data/${deletePersonData}.json`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    )
+      .then(() => {
+        setShowConfirmDeleteDiv(false);
+        fetchData();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   return (
     <>
@@ -248,20 +293,72 @@ let Admin = () => {
                           : "Resloved"}
                       </button>
                     </div>
-                    {!queryData[item].resolved_status ? (
-                      <a
-                        className={styles.responseText}
-                        href={`mailto:${queryData[item].email}`}
-                        target="_blank"
+                    <div
+                      className={
+                        queryData[item].resolved_status
+                          ? styles.bottomSectionDivForDeleteButton
+                          : styles.bottomSectionDiv
+                      }
+                    >
+                      {!queryData[item].resolved_status ? (
+                        <a
+                          className={styles.responseText}
+                          href={`mailto:${queryData[item].email}`}
+                          target="_blank"
+                        >
+                          Respond Now
+                        </a>
+                      ) : null}
+                      <button
+                        className={styles.deleteButton}
+                        onClick={() => personDeleteHandler(item)}
                       >
-                        Respond Now
-                      </a>
-                    ) : null}
+                        DELETE
+                      </button>
+                    </div>
                   </div>
                 );
               })
             )}
           </div>
+          {showConfirmDeleteDiv ? (
+            <div className={styles.confirmDeleteDiv}>
+              <div className={styles.mainConfirmDeleteDiv}>
+                <div className={styles.topSectionDiv}>
+                  <p className={styles.confirmDeleteHeading}>
+                    Confirm Your Request
+                  </p>
+                  <p
+                    className={styles.crossSymbol}
+                    onClick={() => setShowConfirmDeleteDiv(false)}
+                  >
+                    ✖
+                  </p>
+                </div>
+                <p className={styles.confirmPara}>
+                  Are you sure you want to Delete{" "}"
+                  <span className={styles.deletedPersonName}>
+                    {confirmDeleteDivPersonName} 's
+                  </span>{" "}
+                  " query ? This record will be Deleted permanently.
+                </p>
+                <div className={styles.deleteButtonDiv}>
+                  <button
+                    className={styles.yesConfirmDeleteButton}
+                    onClick={confirmDeleteHandler}
+                  >
+                    Yes
+                  </button>
+                  <button
+                    className={styles.noConfirmDeleteButton}
+                    onClick={() => setShowConfirmDeleteDiv(false)}
+                  >
+                    No
+                  </button>
+                </div>
+              </div>
+            </div>
+          ) : null}
         </React.Fragment>
       )}
     </>

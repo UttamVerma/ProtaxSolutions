@@ -46,9 +46,9 @@
   border: 1px solid white;
 }
 
-.lengthDigitText{
-    color: rgb(208, 150, 3);
-    font-weight: 600;
+.lengthDigitText {
+  color: rgb(208, 150, 3);
+  font-weight: 600;
 }
 
 .main {
@@ -77,7 +77,7 @@
 }
 
 .notResolvedSingleQueryDiv {
-  border: 1px solid #E11D48;
+  border: 1px solid #e11d48;
   border-radius: 10px;
   box-sizing: border-box;
   padding-left: 15px;
@@ -118,9 +118,9 @@
   border-radius: 6px;
 }
 
-.reslovedButton:hover{
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.reslovedButton:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .emptyDataText {
@@ -146,17 +146,158 @@
   font-size: 20px;
 }
 
-.queryFieldsText{
-    color: rgb(211, 84, 0);
+.queryFieldsText {
+  color: rgb(211, 84, 0);
 }
 
-.responseText{
+.responseText {
   font-size: 18px;
   letter-spacing: 1px;
 }
 
-.responseText:hover{
+.responseText:hover {
   color: rgb(2, 134, 178);
+}
+
+.bottomSectionDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottomSectionDivForDeleteButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.deleteButton {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 4px;
+  width: 70px;
+  font-weight: 600;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+
+.deleteButton:hover {
+  background-color: black;
+  cursor: pointer;
+  border: 1px solid black;
+  color: white;
+}
+
+.confirmDeleteDiv {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  box-sizing: border-box;
+}
+
+.mainConfirmDeleteDiv {
+  width: 50%;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  background-color: white;
+  box-sizing: border-box;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  border-radius: 10px;
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.topSectionDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirmDeleteHeading {
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: red;
+}
+
+.crossSymbol:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.confirmPara {
+  margin-top: -10px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.deletedPersonName {
+  color: red;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.deleteButtonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+}
+
+.yesConfirmDeleteButton {
+  width: 90px;
+  font-size: 17px;
+  padding: 5px;
+  background-color: green;
+  border: 1px solid green;
+  border-radius: 4px;
+  color: white;
+}
+
+.yesConfirmDeleteButton:hover{
+  cursor: pointer;
+}
+
+.yesConfirmDeleteButton:active{
+  background-color: rgb(4, 197, 4);
+}
+
+.noConfirmDeleteButton {
+  width: 90px;
+  font-size: 17px;
+  padding: 5px;
+  background-color: rgb(211, 3, 3);
+  border: 1px solid rgb(211, 3, 3);
+  border-radius: 4px;
+  color: white;
+}
+
+.noConfirmDeleteButton:hover{
+  cursor: pointer;
+}
+
+.noConfirmDeleteButton:active{
+  cursor: pointer;
+  background-color: red;
 }
 
 @media all and (max-width: 1000px) {
@@ -292,6 +433,34 @@
 
   .lengthText {
     font-size: 20px;
+  }
+
+  .deleteButtonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    margin: auto;
+  }
+
+  .yesConfirmDeleteButton {
+    width: 80px;
+    font-size: 17px;
+    padding: 5px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .noConfirmDeleteButton {
+    width: 80px;
+    font-size: 17px;
+    padding: 5px;
+    background-color: rgb(211, 3, 3);
+    border: 1px solid rgb(211, 3, 3);
+    border-radius: 4px;
+    color: white;
   }
 }
 
@@ -567,6 +736,54 @@
   .lengthText {
     font-size: 17px;
   }
+
+  .mainConfirmDeleteDiv {
+    width: 70%;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    background-color: white;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+    border-radius: 10px;
+    animation: slideIn 1s ease forwards;
+  }
+
+  .deleteButtonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    margin: auto;
+  }
+
+  .yesConfirmDeleteButton {
+    width: 80px;
+    font-size: 17px;
+    padding: 5px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .noConfirmDeleteButton {
+    width: 80px;
+    font-size: 17px;
+    padding: 5px;
+    background-color: rgb(211, 3, 3);
+    border: 1px solid rgb(211, 3, 3);
+    border-radius: 4px;
+    color: white;
+  }
+
+  .deletedPersonName {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -707,8 +924,62 @@
     margin-bottom: 5px;
   }
 
-  .responseText{
+  .responseText {
     font-size: 15px;
     letter-spacing: 1px;
+  }
+
+  .mainConfirmDeleteDiv {
+    width: 70%;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    background-color: white;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+    border-radius: 10px;
+    animation: slideIn 1s ease forwards;
+  }
+
+  .deleteButtonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+  }
+
+  .yesConfirmDeleteButton {
+    width: 70px;
+    font-size: 15px;
+    padding: 2px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .noConfirmDeleteButton {
+    width: 70px;
+    font-size: 15px;
+    padding: 2px;
+    background-color: rgb(211, 3, 3);
+    border: 1px solid rgb(211, 3, 3);
+    border-radius: 4px;
+    color: white;
+  }
+
+  .deletedPersonName {
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .confirmDeleteHeading {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: red;
   }
 }
