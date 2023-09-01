@@ -2,17 +2,20 @@ import { useContext, useState } from "react";
 import styles from "./ConfirmAdmin.module.css";
 import { AuthContext } from "../Context/AuthContextProvider";
 import { useNavigate } from "react-router-dom";
+import env from "../env";
 let ConfirmAdmin = () => {
   let navigate = useNavigate();
   let { setShowQueryData } = useContext(AuthContext);
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
   let [error, setError] = useState(false);
+  let loginEmail=env.LOGIN_EMAIL;
+  let loginPassword=env.LOGIN_PASSWORD;
   let submitHandler = (e) => {
     e.preventDefault();
     if (
-      email.trim() === "pprotaxsolutions@gmail.com" &&
-      password.trim() === "neeraj_@123"
+      email.trim() === `${loginEmail}` &&
+      password.trim() === `${loginPassword}`
     ) {
       let currentTime = new Date().getTime();
       let expiryTime = currentTime + 24 * 60 * 60 * 1000;

@@ -1,6 +1,6 @@
 import styles from "./RelatedService.module.css";
 import Navbar from "../Components/Navbar.jsx";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Footer from "../Components/Footer";
 import { getAnalytics } from "firebase/analytics";
 import { getDatabase, ref, onValue, off } from "firebase/database";
@@ -22,20 +22,22 @@ let RelatedService = () => {
   let [service, setService] = useState([]);
   let [relatedServices, setRelatedServices] = useState([]);
   let [loading, setLoading] = useState(true);
-  let navigate=useNavigate();
+  let navigate = useNavigate();
   let [featuresHeading, setFeaturesHeading] = useState("");
   let [featuresList, setFeaturesList] = useState([]);
   let [benefitsHeading, setBenefitsHeading] = useState("");
   let [benefitsList, setBenefitsList] = useState([]);
-  let {name} =useParams();
+  let { name } = useParams();
   let firebaseConfig = {
-    apiKey: "AIzaSyAy3b_KQ9SuERsygoLmEJvMZtBYk7TMbuE",
-    authDomain: "protaxsolutions-91422.firebaseapp.com",
-    projectId: "protaxsolutions-91422",
-    storageBucket: "protaxsolutions-91422.appspot.com",
-    messagingSenderId: "1061705564004",
-    appId: "1:1061705564004:web:68a8bb59b6a1ffea2b4471",
-    measurementId: "G-1QKMXCCPNR",
+    apiKey: "AIzaSyAz7dcJH7z1e1oxqkTQMr2g1-eNtPD0VQg",
+    authDomain: "protax-solutions-all-web-data.firebaseapp.com",
+    databaseURL:
+      "https://protax-solutions-all-web-data-default-rtdb.firebaseio.com",
+    projectId: "protax-solutions-all-web-data",
+    storageBucket: "protax-solutions-all-web-data.appspot.com",
+    messagingSenderId: "452865166423",
+    appId: "1:452865166423:web:6a638fd3142d98f7df6712",
+    measurementId: "G-GVSVBBWBR8",
   };
   initializeApp(firebaseConfig);
   getAnalytics();
@@ -77,7 +79,7 @@ let RelatedService = () => {
           if (data[i].name !== name) {
             relatedServicesData.push(data[i]);
           }
-          if(relatedServicesData.length===2){
+          if (relatedServicesData.length === 2) {
             break;
           }
         }
