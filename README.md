@@ -17,7 +17,7 @@ This project features a clean, professional interface with the following section
 - 👥 **About Us**
 - ✉️ **Contact Us**
 
-> ⚠️ The website was never made fully live due to a misunderstanding during the deployment phase — it remains a **conceptual project** developed for educational and demonstration purposes.
+> ⚠️ The website was never made fully live — it remains a **conceptual project** developed for educational and demonstration purposes.
 
 ---
 
